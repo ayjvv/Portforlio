@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+/***** header *****/
+header .menu{
+  background-color: var(--color-point-pink);
+  width: 15%;
+  min-width: 200px;
+  height: 30vh;
+  border-radius: 0 0 25px 0;
+}
+.menu .menu-logo{
+  width: 8%;
+}

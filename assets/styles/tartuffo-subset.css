@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Tartuffo_Trial';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Tartuffo_Trial Regular'), url(../fonts/Tartuffo_Trial-Regular-BF643371db1355b.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Tartuffo_Trial';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Tartuffo_Trial Bold'), url(../fonts/Tartuffo_Trial-Bold-BF643371dae156a.woff2) format('woff2');
+}

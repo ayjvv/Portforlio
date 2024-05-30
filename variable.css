@@ -1,0 +1,42 @@
+@charset "UTF-8";
+  
+/**** fonts ****/
+
+/* 'Pretendard' ,sans-serif */
+  @import url(./assets/styles/pretendard-subset.css);
+
+/* 'Tartuffo_Trial' */
+  @import url(./assets/styles/tartuffo-subset.css);
+
+
+:root{
+  /* font */
+  --font-m-ko: 'Pretendard', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial ,sans-serif;
+  --font-m-en: 'Tartuffo_Trial', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial ,sans-serif;
+
+
+
+  /* color */
+  --color-point-bg: #F0EBE8;
+  --color-point-black: #222;
+  --color-point-red: #FC8A7C;
+  --color-point-pink: #FFD8D8;
+  --color-point-violiet: #DFCCFF;
+  --color-point-purple: #5525A9;
+}
+
+
+/* body */
+body{
+  background-color: var(--color-point-bg);
+}
+
+/* menu-btn */
+header .menu-page span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--color-point-black);
+  margin-left: 20px;
+  margin: 5px 0;
+}
