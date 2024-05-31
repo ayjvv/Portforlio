@@ -32,12 +32,3 @@ body{
   font-family: var(--font-m-en);
 }
 
-/* menu-btn */
-header .menu-page span {
-  display: block;
-  width: 23px;
-  height: 2px;
-  background-color: var(--color-point-black);
-  margin-left: 20px;
-  margin: 5px 0;
-}

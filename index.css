@@ -2,73 +2,128 @@
 
 
 /***** header *****/
-.menu{
-  background-color: var(--color-point-pink);
-  width: 18%;
-  min-width: 200px;
-  height: 38vh;
-  border-radius: 0 0 30px 0;
-  position: relative;
 
-  /* display: none; */
+.menu-page {
+  background-color: var(--color-point-pink);
+  width: 15%;
+  min-width: 200px;
+  height: 35vh;
+  border-radius: 0 0 30px 0;
+  position: fixed;
+  left: -300px;
+  z-index: 9999;
 }
-.menu .menu-logo{
-  width: 8%; 
+
+.side-menu {
+  padding-top: 70px;
+}
+
+.side-menu li {
+  font-size: 1.5rem;
+  line-height: 45px;
+  font-weight: 800;
+  text-align: left;
+  padding-left: 35px;
+}
+
+.side-menu li:hover {
+  color: var(--color-point-red);
+  cursor: pointer;
+}
+
+.menu-logo {
+  width: 8%;
   position: absolute;
   right: 20px;
   top: 15px;
 }
-.side-menu{
-  padding-top: 70px;
-  padding-left: 35px;
-}
-.menu .side-menu li{
-  font-size: 1.5rem;
-  line-height: 45px;
-  font-weight: 800;
-}
-.menu .side-menu li:hover{
-  color: var(--color-point-red);
-}
-.menu .menu-mail{
+
+.menu-mail {
   width: 10%;
-  margin-top: 31px;
   margin-left: 15px;
+  margin-top: 25px;
 }
-.menu .menu-github{
+
+.menu-github {
   width: 8%;
-  margin-top: 33px;
+  margin-top: 26px;
   margin-left: 35px;
 }
-.menu-page{
-  position: absolute;
-  top: 10px; left: 10px;
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  z-index: 9999;
+  cursor: pointer;
 }
 
+.menu-btn span {
+  display: block;
+  width: 27px;
+  height: 2px;
+  background-color: var(--color-point-black);
+  margin-left: 20px;
+  margin: 5px 0;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.menu-btn.opened .bar1 {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-btn.opened .bar2 {
+  opacity: 0;
+}
+
+.menu-btn.opened .bar3 {
+  transform: translateY(-7px) rotate(-45deg);
+}
 
 /***** main *****/
-.cover{
+.cover {
   height: 100vh;
   text-align: center;
   place-content: center;
   position: relative;
 }
-.cover h1{
+
+.cover h1 {
   font-weight: 800;
-  font-size: 4rem;
-}
-.cover .cover-txt{
-  font-family: var(--font-m-ko);
-  padding-bottom: 150px;
+  font-size: clamp(3rem,6.5vw,5rem);
+  z-index: 9999;
 }
 
-.cover .cover-img{
+.cover .cover-txt {
+  font-family: var(--font-m-ko);
+  padding-bottom: 150px;
+  font-size: clamp(0.5rem,3vw,1.5rem);
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+.cover .cover-img {
   position: absolute;
   right: 3.5%;
   bottom: 50px;
 }
-.cover .cover-img img{
+
+.cover .cover-img img {
   width: 30%;
   padding-right: 10px;
   padding-top: 3px;
+}
+
+.circle {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  max-width: 550px;
+  max-height: 550px;
+  border-radius: 50%;
+  background-color: #FFFB82;
+  top: 65vh;
+  right: 35vw;
+  transform: translate(50%, -50%);
+  z-index: -999;
 }
