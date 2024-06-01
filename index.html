@@ -31,6 +31,7 @@
   <script src="./assets/js/jquery-3.7.1.min.js"></script>
   <script src="./assets/js/jquery-ui.min.js"></script>
   <script src="./assets/js/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
   <!-- plugIn -->
 
@@ -70,33 +71,49 @@
 
     <!----- cover ----->
     <section class="cover">
-      <div class="circle"></div>
+      
+      <div class="circle">
+    <div>
       <h1>YOON JI’s<br>PORTFOLIO</h1>
       <p class="cover-txt">태양처럼 밝은 미래를 꿈꾸는 웹퍼블리셔 안윤지입니다.</p>
-      
+    </div>
+      </div>
 
       <p class="cover-img"><img src="./assets/images/black-logo.png" alt="메인로고">DESING</p>
     </section>
 
-    <!----- project ----->
-    <section class="project">
+    <article class="project">
+
       <p>Drag please →</p>
 
-      <div class="project-slide">
-        <h3>Project</h3>
-        <img src="./assets/images/project-img.png" alt="">
+      <swiper-container class="mySwiper" navigation="true" loop="true">
+        <swiper-slide>
+          <div class="project-slide">
+            <h3>Project</h3>
+            <img src="./assets/images/project-img.png" alt="프로젝트사진" class="project-img">
 
-        <div class="project-txt">
-          <ul>
-            <li>#팀 작업 #네잎클로버 #Figma</li>
-            <li><img src="./assets/images/violet-logo.png" alt="프로젝트1 로고">01</li>
-          </ul>
-          <h2>UI/UX Design</h2>
-          <a href="#" class="projecr-btn">프레젠테이션보러가기</a>
-          <a href="#" class="projecr-btn">사이트 보러가기</a>
-        </div>
-      </div>
-    </section>
+
+            <div class="project-txt">
+              <ul>
+                <li>#팀 작업 #네잎클로버 #Figma</li>
+                <li><img src="./assets/images/violet-logo.png" alt="프로젝트1 로고" class="project1-logo">01</li>
+              </ul>
+              <h2>UI/UX Design</h2>
+              <a href="#" class="projecr-btn">프레젠테이션보러가기</a>
+              <a href="#" class="projecr-btn">사이트 보러가기</a>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>Slide 2</swiper-slide>
+
+        <swiper-slide>Slide 3</swiper-slide>
+
+        <swiper-slide>Slide 4</swiper-slide>
+      </swiper-container>
+
+    </article>
+
 
     <!----- skill-tool ----->
     <section class="skill-tool">
@@ -105,77 +122,88 @@
       <div class="skill-txt">
         <h3>HTML5 & CSS3</h3>
         <ul>
-          <li>웹 표준과 웹 접근성을 고려한 시맨틱 태그</li>
-          <li>Flex / Grid / Position으로 레이아웃 구축</li>
-          <li>@keyframe을 활용한 animation 제어</li>
-          <li>미디어쿼리를 활용한 반응형 웹</li>
+          <li><span>웹 표준과 웹 접근성</span>을 고려한 시맨틱 태그</li>
+          <li>Flex / Grid / Position으로 <span>레이아웃</span> 구축</li>
+          <li><span>@keyframe</span>을 활용한 animation 제어</li>
+          <li>미디어쿼리를 활용한 <span>반응형 웹</span></li>
         </ul>
       </div>
 
       <div class="skill-txt">
         <h3>JavaScript & jQuery</h3>
         <ul>
-          <li>ES6+ 문법 사용 및 이해</li>
-          <li>변수 및 함수의 유효 범위, event.target등의 실행 컨텍스트 이해 구축</li>
-          <li>비동기 함수(setTimeout, setInterval 등) 사용</li>
-          <li>jQuery를 이용한 DOM 조작</li>
+          <li><span>ES6+ 문법</span> 사용 및 이해</li>
+          <li>변수 및 함수의 유효 범위, event.target등의 <br><span>실행 컨텍스트 이해</span>구축</li>
+          <li><span>비동기 함수</span>(setTimeout, setInterval 등) 사용</li>
+          <li>jQuery를 이용한 <span>DOM 조작</span></li>
         </ul>
       </div>
 
       <div class="skill-txt">
         <h3>React</h3>
         <ul>
-          <li>css-modules를 활용한 스타일 적용</li>
-          <li>Styled-Component 문법 이해</li>
-          <li>Bootstrap</li>
+          <li><span>css-modules</span>를 활용한 스타일 적용</li>
+          <li><span>Styled-Component</span> 문법 이해</li>
+          <li><span>Bootstrap</span></li>
         </ul>
       </div>
 
       <div class="skill-txt">
         <h3>Tool</h3>
         <ul>
-          <li>Figma - UI디자인, 프로토타입 제작</li>
-          <li>Photoshop & Illustrator 활용한 이미지 편집</li>
-          <li>github organization를 사용한 팀 프로젝트</li>
-          <li>Git Bash로 git파일 백업 및 버전 관리</li>
+          <li><span>Figma</span> - UI디자인, 프로토타입 제작</li>
+          <li><span>Photoshop & Illustrator</span> 활용한 이미지 편집</li>
+          <li><span>github organization</span>를 사용한 팀 프로젝트</li>
+          <li><span>Git Bash</span>로 git파일 백업 및 버전 관리</li>
         </ul>
       </div>
     </section>
 
-    <!----- aboutme ----->
+    <!----- about-me ----->
     <section class="aboutme">
-      <h2>ABOUT ME<img src="./assets/images/black-logo.png" alt=""></h2>
+      <div class="aboutme-container">
+        <div class="aboutme-h2">
+          <h2 class="aboutme-title">ABOUT ME<img src="./assets/images/black-logo.png" alt=""></h2>
+        </div>
 
-      <ul>
-        <li><img src="./assets/images/aboutme-pofol.png" alt=""></li>
-        <li><img src="./assets/images/aboutme-study.png" alt=""></li>
-        <li><img src="./assets/images/aboutme-team.png" alt=""></li>
-      </ul>
+        <div class="about-me-ul">
+          <ul>
+            <li class="aboutme-item"><a href="#"><img src="./assets/images/aboutme-pofol.png" alt=""></a></li>
+            <li class="aboutme-item"><a href="#"><img src="./assets/images/aboutme-study.png" alt=""></a></li>
+            <li class="aboutme-item"><a href="#"><img src="./assets/images/aboutme-team.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
     </section>
+
 
     <!----- footer ----->
     <footer>
       <div class="contact">
         <h2>CONTACT</h2>
 
+        <div class="contact-img">
         <figure>
-          <img src="./assets/images/githube-logo.png" alt="" class="githube">
-          <figcaption>GIt Hub</figcaption>
+          <a href="#"><img src="./assets/images/githube-logo.png" alt=""></a>
+          <figcaption class="githube">GIt Hub</figcaption>
+        </figure>
+
+        <figure class="mail-txt">
+          <a href="#"><img src="./assets/images/mail-logo.png" alt=""></a>
+          <figcaption class="mail">Mail</figcaption>
         </figure>
 
         <figure>
-          <img src="./assets/images/mail-logo.png" alt="" class="mail">
-          <figcaption>Mail</figcaption>
+          <a href="#"><img src="./assets/images/kakao-logo.png" alt=""></a>
+          <figcaption class="kakaotalk">Kakao Talk</figcaption>
         </figure>
-
-        <figure>
-          <img src="./assets/images/kakao-logo.png" alt="" class="kakaotalk">
-          <figcaption>Kakao Talk</figcaption>
-        </figure>
+      </div>
 
       </div>
 
+      <div class="footer-txt">
       <p><img src="./assets/images/black-logo.png" alt="블랙로고">끊임 없이 노력하여 빛을 보는 웹퍼블리셔가 되겠습니다. 감사합니다.</p>
+      </div>
     </footer>
   </main>
 

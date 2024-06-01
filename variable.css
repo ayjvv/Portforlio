@@ -30,5 +30,6 @@
 body{
   background-color: var(--color-point-bg);
   font-family: var(--font-m-en);
+  color:  #222;
 }
 
