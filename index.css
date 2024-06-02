@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+.menu-btn.none{
+  opacity: 0;
+  transition: 1s;
+}
+.menu-btn.on{
+  pointer-events: none;
+}
 
 /***** header *****/
 
@@ -88,6 +95,7 @@
   position: relative;
 }
 
+
 .cover h1 {
   font-weight: 800;
   font-size: clamp(3rem,6.5vw,5rem);
@@ -99,6 +107,7 @@
   font-size: clamp(0.5rem,3vw,1.5rem);
   margin-top: 30px;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .cover .cover-img {
@@ -112,11 +121,12 @@
   padding-right: 10px;
   padding-top: 3px;
 }
-.circle div{
+.circle .txt{
   position: absolute;
   top:-10%;
   left: -50%;
 }
+
 .circle {
   position: absolute;
   width: 50vw;
@@ -128,26 +138,47 @@
   top: 65vh;
   right: 35vw;
   transform: translate(50%, -50%);
-  
 }
-.circle:hover {
-  background: linear-gradient(#FC8A7C, #FFD8D8);
+
+.circle2{
+  background: linear-gradient(#FF6E7A, #FFD8D8);
+  opacity: 0;
+  z-index: 9;
+  transition: opacity 3s;
+}
+.circle2:hover .circle1{
+  opacity: 0;
+}
+.circle2:hover{
+  opacity: 1;
+  transition: 3s;
+}
+.cover1{
+  background-color: #F0EBE8;
+  opacity: 0;
+  z-index: -999;
+  transition: opacity 3s, background 3s;
+}
+.circle2:hover ~ .cover1{
+  background: linear-gradient(#FEC1C3, #FCDEC8);
+  opacity: 1;
 }
 
 /***** project *****/
+
 .project p{
   text-align: center;
-  margin-top: 300px;
-  margin-bottom: 20px;
+  padding-top: 300px;
+  padding-bottom: 20px;
 }
 .project-slide{
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: bisque;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: #F0EBE8;
 }
 .project-slide h3{
   font-size: clamp(1.5rem,3vw,2.5rem);
@@ -296,7 +327,7 @@ swiper-slide {
 
 .aboutme-container {
   position: relative;
-  height: 1450px; /* 스크롤이 일어날 만큼의 높이를 지정합니다. 실제 적용할 때에는 컨텐츠 높이에 맞게 설정하세요. */
+  height: 1450px; /* 스크롤이 일어날 만큼의 높이를 지정. */
 }
 
 .aboutme-h2 {
