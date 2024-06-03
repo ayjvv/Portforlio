@@ -12,12 +12,12 @@
 
 .menu-page {
   background-color: var(--color-point-pink);
-  width: 15%;
-  min-width: 200px;
-  height: 35vh;
+  width: 23%;
+  min-width: 300px;
+  height: 55vh;
   border-radius: 0 0 30px 0;
   position: fixed;
-  left: -300px;
+  left: -500px;
   z-index: 9999;
 }
 
@@ -26,11 +26,13 @@
 }
 
 .side-menu li {
-  font-size: 1.5rem;
+  font-size: clamp(1.8rem,3vw,2rem);
+  /* font-size: 2rem; */
   line-height: 45px;
   font-weight: 800;
   text-align: left;
-  padding-left: 35px;
+  padding-left: 75px;
+  margin-top: 33px;
 }
 
 .side-menu li:hover {
@@ -46,15 +48,17 @@
 }
 
 .menu-mail {
-  width: 10%;
-  margin-left: 15px;
-  margin-top: 25px;
+  width: 6%;
+  min-width: 25px;
+  margin-left: 35px;
+  margin-top: 61px;
 }
 
 .menu-github {
-  width: 8%;
-  margin-top: 26px;
-  margin-left: 35px;
+  width: 6%;
+  margin-top: 60px;
+  margin-left: 75px;
+  min-width: 23px;
 }
 
 .menu-btn {
@@ -89,7 +93,7 @@
 
 /***** main *****/
 .cover {
-  height: 100vh;
+  height: 130vh;
   text-align: center;
   place-content: center;
   position: relative;
@@ -113,8 +117,9 @@
 .cover .cover-img {
   position: absolute;
   right: 3.5%;
-  bottom: 50px;
+  bottom: 300px;
 }
+
 
 .cover .cover-img img {
   width: 30%;
@@ -186,6 +191,20 @@
   top: 12%;
   left: 13%;
 }
+
+/* project 컬러 */
+.project-slide1 h3{
+  color: var(--color-point-purple);
+}
+.project-slide2 h3{
+  color: var(--color-point-orange);
+}
+.project-slide3 h3{
+  color: var(--color-point-green);
+}
+.project-slide4 h3{
+  color: var(--color-point-yellow);
+}
 .project-slide .project-img{
   width: 35%;
   min-width: 400px;
@@ -206,9 +225,23 @@
   font-size: 1.3rem;
   padding-bottom: 45px;
 }
-.project-txt ul li:last-child{
+
+/* 숫자 컬러 */
+.project-num1{
   font-size: 1.5rem;
   color: var(--color-point-purple);
+}
+.project-num2{
+  font-size: 1.5rem;
+  color: var(--color-point-orange);
+}
+.project-num3{
+  font-size: 1.5rem;
+  color: var(--color-point-green);
+}
+.project-num4{
+  font-size: 1.5rem;
+  color: var(--color-point-yellow);
 }
 
 .project-txt h2{
@@ -228,7 +261,7 @@ swiper-slide {
   align-items: center;
 }
 
-.project-txt a{
+.project-btn{
   border: 1.5px solid #222;
   padding: 10px;
   border-radius: 50px;
@@ -236,20 +269,38 @@ swiper-slide {
   font-family: var(--font-m-ko);
   font-weight: 400;
 }
-/* .swiper-button-next, .swiper-button-prev{
-  color: #222;
-} */
 
+/* 버튼 호버 컬러 */
+#project-btn1:hover{
+  background-color: var(--color-point-purple);
+  color: #fff;
+}
+#project-btn2:hover{
+  background-color: var(--color-point-purple);
+  color: #fff;
+}
+.project-btn2:hover{
+  background-color: var(--color-point-orange);
+  color: #fff;
+}
+.project-btn3:hover{
+  background-color: var(--color-point-green);
+  color: #fff;
+}
+.project-btn1:hover{
+  background-color: var(--color-point-yellow);
+  color: #fff;
+}
 
 /***** skill-tool *****/
 
 .skill-tool{
-  margin-top: 180px;
+  margin-top: 200px;
 }
 .skill-tool h2{
   text-align: center;
   font-size: clamp(1rem,3vw,2rem);
-  margin-bottom: 100px;
+  margin-bottom: 130px;
   color: var(--color-point-red);
 }
 .skill-tool h2 img{
@@ -263,6 +314,7 @@ swiper-slide {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  /* align-items: center; */
   border-bottom: 1px solid var(--color-point-purple);
   width: 75%;
   padding: 30px;
@@ -275,7 +327,8 @@ swiper-slide {
 }
 .skill-txt h3{
   font-size: clamp(1rem,3vw,1.5rem);
-  /* width: 100%; */
+  width: 40%;
+  white-space: nowrap;
 }
 .skill-txt:hover h3{
   color: var(--color-point-purple);
@@ -415,6 +468,7 @@ figure a img:hover{
 .footer-txt img{
   margin-top: 4px;
   width: 4%;
+  margin-right: 12px;
 }
 
 

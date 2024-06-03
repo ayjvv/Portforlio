@@ -7,7 +7,7 @@ $('a[href="#"]').on('click', e => e.preventDefault());
 $(document).ready(function() {
     $('.menu-btn').on('click', function(e) {
       $('.menu-page').animate({
-        left: $('.menu-page').css('left') === '0px' ? '-300px' : '0px'
+        left: $('.menu-page').css('left') === '0px' ? '-500px' : '0px'
       }, 800);
       $(this).toggleClass('opened');
     });
@@ -116,18 +116,49 @@ $(document).ready(function() {
   });
 });
 
+ /*** 스크롤에 따라 스와이퍼 배경색 바꾸기2 ***/
+$(document).ready(function() {
+  $(window).on('scroll', function() {
+    var scrollPosition = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    var swiperTop = $('.project-txt').offset().top;
+    var swiperBottom = swiperTop + $('.project-txt').outerHeight();
 
-//  $(document).ready(function() {
-//   $('.mySwiper').hover(
-//     function() {
-//       $('.project-slide1').stop().animate({
-//         'background-color': 'linear-gradient(#E8DBFF)'
-//       }, 1100); 
-//     },
-//     function() {
-//       $('.project-slide1').stop().animate({
-//         'background-color': '#F0EBE8'
-//       }, 1100); 
-//     }
-//   );
-// });
+    if (scrollPosition + windowHeight > swiperTop && scrollPosition < swiperBottom) {
+      $('.project-slide2').stop().animate({
+        'background-color': 'linear-gradient(#FFD9C5)'
+      }, 700); //안에 들어왔을 때
+    } else {
+      
+      $('.project-slide2').stop().animate({
+        'background-color': '#F0EBE8'
+      }, 300); // 벗어났을 때
+    }
+  });
+});
+
+
+  
+ /*** 스크롤에 따라 스와이퍼 배경색 바꾸기2 ***/
+$(document).ready(function() {
+  $(window).on('scroll', function() {
+    var scrollPosition = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    var swiperTop = $('.project-txt').offset().top;
+    var swiperBottom = swiperTop + $('.project-txt').outerHeight();
+
+    if (scrollPosition + windowHeight > swiperTop && scrollPosition < swiperBottom) {
+      $('.project-slide3').stop().animate({
+        'background-color': 'linear-gradient(#CAEBE6)'
+      }, 700); //안에 들어왔을 때
+    } else {
+      
+      $('.project-slide3').stop().animate({
+        'background-color': '#F0EBE8'
+      }, 300); // 벗어났을 때
+    }
+  });
+});
+
+
+  
