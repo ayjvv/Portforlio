@@ -94,7 +94,7 @@
 
 /***** main *****/
 .cover {
-  height: 130vh;
+  height: 125vh;
   text-align: center;
   place-content: center;
   position: relative;
@@ -149,7 +149,6 @@
   z-index: 8;
 }
 .txt{
-  /* user-select: none; */
   pointer-events: none;
 }
 .circle2{
@@ -168,7 +167,7 @@
   transition: 3s;
 }
 .cover1{
-  height: 130vh;
+  height: 125vh;
   /* background-color: #F0EBE8; */
   background: linear-gradient(#FEC1C3, #FCDEC8);
   opacity: 0;
@@ -406,7 +405,23 @@ swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(2rem,6.5vw,5.5rem);
+}
+.milky {
+  text-transform: uppercase;
+  display: block;
+  font-size: clamp(3rem,6vw,6rem);
+  white-space: nowrap;
+  color: #F0EBE8;
+  text-shadow: 0 8px 9px #d4c5ac, 0px -2px 1px #f1f1f1;
+  font-weight: bold;
+  letter-spacing: -4px;
+  text-align: center;
+  position: absolute;
+  padding: 100px 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
 }
 
 .aboutme ul{
@@ -432,7 +447,7 @@ swiper-slide {
 }
 .aboutme-h2 img{
   width: 5%;
-  margin-top: 13%;
+  margin-top: 15%;
   min-width: 15px;
   margin-left: 20px;
 }
@@ -443,6 +458,7 @@ swiper-slide {
 
 .about-me-ul {
   padding-top: 50px; /* h2의 높이만큼 공간을 비워줍니다. */
+  margin: 0 auto;
 }
 
 .aboutme-item {
@@ -453,7 +469,9 @@ swiper-slide {
   width: 100px; 
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
-
+.aboutme-item:hover img{
+  transform: scale(1.1);
+}
 
 /***** footer *****/
 footer{
@@ -524,7 +542,7 @@ figure a img:hover{
     height: 150vh;
   }
   .aboutme-h2 img{
-    margin-top: 10%;
+    margin-top: 16%;
   }
 }
 @media (max-width : 900px){
@@ -535,5 +553,6 @@ figure a img:hover{
     margin-bottom: 20px;
   }
 }
+
 
 

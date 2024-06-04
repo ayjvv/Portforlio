@@ -112,7 +112,7 @@ $(document).ready(function() {
   function changeSwiperBackground(swiperClass, gradientColor) {
     $(swiperClass).stop().animate({
       'background-color': gradientColor
-    }, 700);
+    }, 800);
   }
 
   // 스크롤 이벤트
@@ -158,5 +158,8 @@ var swiper = new Swiper('.mySwiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
+
 
 
