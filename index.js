@@ -26,17 +26,6 @@ $(document).ready(function() {
     });
 });
 
-//   $(document).ready(function() {
-//     $('.circle').on({
-//         'mouseenter': function() {
-//             $(this).addClass('none');
-//         },
-//         'mouseleave': function() {
-//             $(this).find('li span').removeClass('hovered');
-//         }
-//     });
-// });
-
 
 
 /*** 메인 배경컬러 바꿈 ***/
@@ -93,72 +82,81 @@ $(document).ready(function() {
 
 
 
+//  /*** 스크롤에 따라 스와이퍼 배경색 바꾸기 ***/
+// $(document).ready(function() {
+//   $(window).on('scroll', function() {
+//     var scrollPosition = $(window).scrollTop();
+//     var windowHeight = $(window).height();
+//     var swiperTop = $('.project-txt').offset().top;
+//     var swiperBottom = swiperTop + $('.project-txt').outerHeight();
 
-
- /*** 스크롤에 따라 스와이퍼 배경색 바꾸기 ***/
-$(document).ready(function() {
-  $(window).on('scroll', function() {
-    var scrollPosition = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    var swiperTop = $('.project-txt').offset().top;
-    var swiperBottom = swiperTop + $('.project-txt').outerHeight();
-
-    if (scrollPosition + windowHeight > swiperTop && scrollPosition < swiperBottom) {
-      $('.project-slide1').stop().animate({
-        'background-color': 'linear-gradient(#E3D3FF)'
-      }, 700); //안에 들어왔을 때
-    } else {
+//     if (scrollPosition + windowHeight > swiperTop && scrollPosition < swiperBottom) {
+//       $('.project-slide1').stop().animate({
+//         'background-color': 'linear-gradient(#E3D3FF)'
+//       }, 900); //안에 들어왔을 때
+//     } else {
       
-      $('.project-slide1').stop().animate({
-        'background-color': '#F0EBE8'
-      }, 300); // 벗어났을 때
-    }
-  });
-});
+//       $('.project-slide1').stop().animate({
+//         'background-color': '#F0EBE8'
+//       }, 300); // 벗어났을 때
+//     }
+//   });
+// });
 
- /*** 스크롤에 따라 스와이퍼 배경색 바꾸기2 ***/
+/*** 스크롤에 따라 스와이퍼 배경색 바꾸기2 ***/
 $(document).ready(function() {
-  $(window).on('scroll', function() {
-    var scrollPosition = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    var swiperTop = $('.project-txt').offset().top;
-    var swiperBottom = swiperTop + $('.project-txt').outerHeight();
-
-    if (scrollPosition + windowHeight > swiperTop && scrollPosition < swiperBottom) {
-      $('.project-slide2').stop().animate({
-        'background-color': 'linear-gradient(#FFD9C5)'
-      }, 700); //안에 들어왔을 때
-    } else {
-      
-      $('.project-slide2').stop().animate({
-        'background-color': '#F0EBE8'
-      }, 300); // 벗어났을 때
-    }
-  });
-});
-
-
+  // 스와이퍼 클래스 이름 배열
+  var swiperClasses = ['.project-slide1', '.project-slide2', '.project-slide3', '.project-slide4'];
   
- /*** 스크롤에 따라 스와이퍼 배경색 바꾸기2 ***/
-$(document).ready(function() {
+  // 스와이퍼의 배경색 변경 함수
+  function changeSwiperBackground(swiperClass, gradientColor) {
+    $(swiperClass).stop().animate({
+      'background-color': gradientColor
+    }, 700);
+  }
+
+  // 스크롤 이벤트
   $(window).on('scroll', function() {
     var scrollPosition = $(window).scrollTop();
     var windowHeight = $(window).height();
     var swiperTop = $('.project-txt').offset().top;
     var swiperBottom = swiperTop + $('.project-txt').outerHeight();
 
-    if (scrollPosition + windowHeight > swiperTop && scrollPosition < swiperBottom) {
-      $('.project-slide3').stop().animate({
-        'background-color': 'linear-gradient(#CAEBE6)'
-      }, 700); //안에 들어왔을 때
-    } else {
-      
-      $('.project-slide3').stop().animate({
-        'background-color': '#F0EBE8'
-      }, 300); // 벗어났을 때
-    }
+
+    swiperClasses.forEach(function(swiperClass, index) {
+      if (scrollPosition + windowHeight > swiperTop && scrollPosition < swiperBottom) {
+
+        switch (index) {
+          case 0:
+            changeSwiperBackground(swiperClass, 'linear-gradient(#E3D3FF)');
+            break;
+          case 1:
+            changeSwiperBackground(swiperClass, 'linear-gradient(#FFD9C5)');
+            break;
+          case 2:
+            changeSwiperBackground(swiperClass, 'linear-gradient(#CAEBE6)');
+            break;
+          case 3:
+            changeSwiperBackground(swiperClass, 'linear-gradient(#FFFCA8)');
+            break;
+          default:
+            break;
+        }
+      } else {
+        changeSwiperBackground(swiperClass, '#F0EBE8');
+      }
+    });
   });
 });
 
 
-  
+ /*** 스와이퍼 버튼 ***/
+var swiper = new Swiper('.mySwiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
