@@ -112,7 +112,7 @@ $(document).ready(function() {
   function changeSwiperBackground(swiperClass, gradientColor) {
     $(swiperClass).stop().animate({
       'background-color': gradientColor
-    }, 800);
+    }, 900);
   }
 
   // 스크롤 이벤트
@@ -163,3 +163,65 @@ var swiper = new Swiper('.mySwiper', {
 
 
 
+// const jsScroll = document.querySelector('.cover-scroll');
+// const height = jsScroll.getBoundingClientRect().height - 1;
+// const speed = 0.05;
+// let offset = 0;
+
+// document.body.style.height = height + "px";
+
+// function smoothScroll() {
+//   offset += (window.pageYOffset - offset) * speed;
+//   const scroll = "translateY(-" + offset + "px) translateZ(0)";
+//   jsScroll.style.transform = scroll;
+//   requestAnimationFrame(smoothScroll);
+// }
+// smoothScroll();
+
+
+// const ulScroll = document.querySelector('.cover-scroll');
+// const ulheight = Scroll.getBoundingClientRect().height - 1;
+// const ulspeed = 0.05;
+// let offset = 0;
+
+// document.body.style.height = ulheight + "px";
+
+// function smoothScroll() {
+//   offset += (window.pageYOffset - offset) * ulspeed;
+//   const scroll = "translateY(-" + offset + "px) translateZ(0)";
+//   jsScroll.style.transform = scroll;
+//   requestAnimationFrame(smoothScroll);
+// }
+// smoothScroll();
+
+
+const jsScroll1 = document.querySelector('.circle1 .txt');
+const jsScroll2 = document.querySelector('.circle2 .txt');
+
+const speed = 0.05;
+let offset1 = 0;
+let offset2 = 0;
+
+function smoothScroll() {
+  // 스크롤 위치 계산
+  const scrollY = window.pageYOffset;
+  
+  // 텍스트 이동량을 제한된 비율로 조정
+  const maxScroll = 150; // 최대 이동량을 제한할 값 (원하는 값으로 설정 가능)
+  offset1 += (Math.min(scrollY, maxScroll) - offset1) * speed;
+  offset2 += (Math.min(scrollY, maxScroll) - offset2) * speed;
+
+  // 텍스트 위치 설정
+  const scroll1 = "translateY(-" + offset1 + "px) translateZ(0)";
+  const scroll2 = "translateY(-" + offset2 + "px) translateZ(0)";
+
+  // 텍스트에 적용
+  jsScroll1.style.transform = scroll1;
+  jsScroll2.style.transform = scroll2;
+
+  // 다음 애니메이션 프레임 요청
+  requestAnimationFrame(smoothScroll);
+}
+
+// 페이지 로드 후 smoothScroll 함수 호출하여 스크롤 효과 적용
+smoothScroll();

@@ -94,7 +94,7 @@
 
 /***** main *****/
 .cover {
-  height: 125vh;
+  height: 140vh;
   text-align: center;
   place-content: center;
   position: relative;
@@ -105,7 +105,7 @@
 
 .cover h1 {
   font-weight: 800;
-  font-size: clamp(3rem,6.5vw,5rem);
+  font-size: clamp(3rem,6.5vw,5.5rem);
 }
 
 .cover .cover-txt {
@@ -133,52 +133,53 @@
   position: absolute;
   top:-10%;
   left: -50%;
+  right: 50%;
+  pointer-events: none;
 }
 
 .circle {
   position: absolute;
-  width: 50vw;
-  height: 50vw;
-  max-width: 550px;
-  max-height: 550px;
+  width: 730px;
+  height: 730px;
+  max-width: 50vw;
+  max-height: 50vw;
   border-radius: 50%;
   background-color: #FFFB82;
-  top: 65vh;
-  right: 35vw;
+  top: 75vh;
+  right: 30vw;
   transform: translate(50%, -50%);
   z-index: 8;
 }
-.txt{
-  pointer-events: none;
-}
+
 .circle2{
   background: linear-gradient(#FF6E7A, #FFD8D8);
   opacity: 0;
   z-index: 9;
-  transition: opacity 3s;
+  transition: opacity 2.5s;
 }
 .circle2:hover .circle1{
   opacity: 0;
-  transition: 3s;
+  transition: 2.5s;
 }
 
 .circle2:hover{
   opacity: 1;
-  transition: 3s;
+  transition: 2.5s;
 }
 .cover1{
-  height: 125vh;
+  height: 140vh;
   /* background-color: #F0EBE8; */
   background: linear-gradient(#FEC1C3, #FCDEC8);
   opacity: 0;
   z-index: -99;
-  transition: opacity 3s, backgroud 1s;
+  transition: opacity 2.5s, backgroud 1s;
 }
 .circle2:hover ~ .cover1{
   background: linear-gradient(#FEC1C3, #FCDEC8);
   opacity: 1;
-  transition: opacity 3s;
+  transition: opacity 2.5s;
 }
+
 
 /***** project *****/
 
@@ -332,7 +333,6 @@ swiper-slide {
 
 
 
-
 /***** skill-tool *****/
 
 .skill-tool{
@@ -431,7 +431,8 @@ swiper-slide {
   justify-content: space-around;
 }
 .aboutme ul li img{
-  width: 80%;
+  width: 13vw;
+  min-width: 95px;
 }
 
 
@@ -478,40 +479,46 @@ footer{
   margin-top: 200px;
 }
 .contact h2{
-  font-size: clamp(1.5rem,3vw,2.5rem);
-  padding-right: 20%;
-  padding-left: 10%;
+  font-size: clamp(2rem,3vw,3.5rem);
+  text-align: center;
+  padding-bottom: 10px;
 }
 .contact {
   width: 95%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 0.3fr 1fr;
-  place-items: center;
+  margin: 250px auto 0;
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
-  height: 15vh;
+  height: 35vh;
+  padding-top: 50px;
 }
-.contact-img{
-  width: 50%;
+/* .contact-logo{
   display: flex;
   align-items: center;
   justify-content: space-around;
+} */
+.contact ul{
+  margin: 0 auto;
+  width: 60vw;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.contact-img img{
-  width: 60%;
+.contact ul li{
+  font-size: clamp(0.5rem,3vw,1.5rem);
+  border: 1.5px solid #222;
+  border-radius: 50px;
+  padding: 1% 5% 1% 5%;
+  width: max-content;
+  min-width: 100px;
+  white-space: nowrap;
+  text-align: center;
 }
-.mail{
-  /* margin-bottom: 10px; */
-  margin-left: 6px;
+.contact ul li:hover{
+  background-color: #222;
+  color: #fff;
 }
-figure a img{
-  opacity: .5;
-  margin-bottom: 10px;
-}
-figure a img:hover{
-  opacity: 1;
-}
+
 .githube, .kakaotalk{
   white-space: nowrap;
 }
@@ -533,19 +540,33 @@ figure a img:hover{
 
 
 @media (max-width : 800px){
+  
+  .contact {
+    margin: 0 auto 0;
+  }
+  .circle {
+    top: 55vh;
+  }
 
   .project-slide{
     flex-direction: column;
   }
-
+  .contact ul li{
+    padding: 2% 5% 2% 5%;
+    
+  }
+  
   .aboutme-container {
-    height: 150vh;
+    height: 148vh;
   }
   .aboutme-h2 img{
     margin-top: 16%;
   }
 }
 @media (max-width : 900px){
+  .aboutme-container {
+    height: 150vh;
+  }
   .skill-txt{
     grid-template-columns: 1fr;
   }
@@ -553,6 +574,5 @@ figure a img:hover{
     margin-bottom: 20px;
   }
 }
-
 
 

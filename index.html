@@ -21,6 +21,7 @@
   <!-- reset -->
   <link rel="stylesheet" href="./assets/styles/reset.css">
 
+
   <!-- 공통 style -->
   <link rel="stylesheet" href="./variable.css">
 
@@ -32,11 +33,13 @@
   <script src="./assets/js/jquery-ui.min.js"></script>
   <script src="./assets/js/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+  <script src="./assets/js/ScrollTrigger.min.js"></script>
+  
 
 
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
+
   <!-- plugIn -->
 
 </head>
@@ -77,8 +80,10 @@
     <section class="cover">
 
 
-      <div>
-        <div class=" circle circle2">
+      <div class="cover-scroll">
+
+  
+        <div class=" circle circle2"> 
           <div class="txt txt1">
             <h1>YOON JI’s<br>PORTFOLIO</h1>
             <p class="cover-txt">태양처럼 밝은 미래를 꿈꾸는 웹퍼블리셔 안윤지입니다.</p>
@@ -86,14 +91,14 @@
         </div>
 
         <div class="circle circle1">
-          <div class="txt">
+          <div class="txt txt2">
             <h1>YOON JI’s<br>PORTFOLIO</h1>
             <p class="cover-txt">태양처럼 밝은 미래를 꿈꾸는 웹퍼블리셔 안윤지입니다.</p>
           </div>
         </div>
 
-      <div class=" cover1"></div>
-        
+        <div class="cover1"></div>
+
         <p class="cover-img"><img src="./assets/images/black-logo.png" alt="메인로고">DESING</p>
 
       </div>
@@ -110,79 +115,83 @@
 
           <div class="swiper-slide">
             <div class="project-slide project-slide1">
-            <h3>Project</h3>
-            <img src="./assets/images/project-img.png" alt="프로젝트사진" class="project-img">
+              <h3>Project</h3>
+              <img src="./assets/images/project-img.png" alt="프로젝트사진" class="project-img">
 
-            <div class="project-txt">
-              <ul>
-                <li>#팀 작업 #네잎클로버 #Figma</li>
-                <li class="project-num1"><img src="./assets/images/violet-logo.png" alt="프로젝트1 로고" class="project1-logo">01</li>
-              </ul>
-              <h2>UI/UX Design</h2>
-              <a href="#" class="project-btn" id="project-btn1">프레젠테이션보러가기</a>
-              <a href="#" class="project-btn" id="project-btn2">사이트 보러가기</a>
+              <div class="project-txt">
+                <ul>
+                  <li>#팀 작업 #네잎클로버 #Figma</li>
+                  <li class="project-num1"><img src="./assets/images/violet-logo.png" alt="프로젝트1 로고"
+                      class="project1-logo">01</li>
+                </ul>
+                <h2>UI/UX Design</h2>
+                <a href="#" class="project-btn" id="project-btn1">프레젠테이션보러가기</a>
+                <a href="#" class="project-btn" id="project-btn2">사이트 보러가기</a>
+              </div>
             </div>
           </div>
-        </div>
 
 
           <div class="swiper-slide">
             <div class="project-slide project-slide2">
-            <h3>Project</h3>
-            <img src="./assets/images/project-img.png" alt="프로젝트사진" class="project-img">
-  
-            <div class="project-txt">
-              <ul>
-                <li>#팀 작업 #말없는 은하수에 핀 네잎클로버 #Figma</li>
-                <li class="project-num2"><img src="./assets/images/orange-logo.png" alt="프로젝트1 로고" class="project1-logo">02</li>
-              </ul>
-              <h2>Web<br>Design</h2>
-              <a href="#" class="project-btn project-btn2">프레젠테이션보러가기</a>
-              <a href="#" class="project-btn project-btn2">사이트 보러가기</a>
+              <h3>Project</h3>
+              <img src="./assets/images/project-img.png" alt="프로젝트사진" class="project-img">
+
+              <div class="project-txt">
+                <ul>
+                  <li>#팀 작업 #말없는 은하수에 핀 네잎클로버 #Figma</li>
+                  <li class="project-num2"><img src="./assets/images/orange-logo.png" alt="프로젝트1 로고"
+                      class="project1-logo">02</li>
+                </ul>
+                <h2>Web<br>Design</h2>
+                <a href="#" class="project-btn project-btn2">프레젠테이션보러가기</a>
+                <a href="#" class="project-btn project-btn2">사이트 보러가기</a>
+              </div>
             </div>
           </div>
-        </div>
 
 
           <div class="swiper-slide">
             <div class="project-slide project-slide3">
-            <h3>Project</h3>
-            <img src="./assets/images/project-img.png" alt="프로젝트사진" class="project-img">
-  
-            <div class="project-txt">
-              <ul>
-                <li>#팀 작업 #말없는 은하수에 핀 네잎클로버 #Figma</li>
-                <li class="project-num3"><img src="./assets/images/green-logo.png" alt="프로젝트1 로고" class="project1-logo">03</li>
-              </ul>
-              <h2>Web<br>Design</h2>
-              <a href="#" class="project-btn project-btn3">프레젠테이션보러가기</a>
-              <a href="#" class="project-btn  project-btn3">사이트 보러가기</a>
+              <h3>Project</h3>
+              <img src="./assets/images/project-img.png" alt="프로젝트사진" class="project-img">
+
+              <div class="project-txt">
+                <ul>
+                  <li>#팀 작업 #말없는 은하수에 핀 네잎클로버 #Figma</li>
+                  <li class="project-num3"><img src="./assets/images/green-logo.png" alt="프로젝트1 로고"
+                      class="project1-logo">03</li>
+                </ul>
+                <h2>Web<br>Design</h2>
+                <a href="#" class="project-btn project-btn3">프레젠테이션보러가기</a>
+                <a href="#" class="project-btn  project-btn3">사이트 보러가기</a>
+              </div>
             </div>
           </div>
-        </div>
 
           <div class="swiper-slide">
             <div class="project-slide project-slide4">
-            <h3>Project</h3>
-            <img src="./assets/images/project-img.png" alt="프로젝트사진" class="project-img">
-  
-            <div class="project-txt">
-              <ul>
-                <li>#개인작업 #이름 #Portforlio</li>
-                <li class="project-num4"><img src="./assets/images/yellow-logo.png" alt="프로젝트1 로고" class="project1-logo">04</li>
-              </ul>
-              <h2>Portforlio</h2>
-              <a href="#" class="project-btn project-btn4">프레젠테이션보러가기</a>
-              <a href="#" class="project-btn  project-btn4">사이트 보러가기</a>
+              <h3>Project</h3>
+              <img src="./assets/images/project-img.png" alt="프로젝트사진" class="project-img">
+
+              <div class="project-txt">
+                <ul>
+                  <li>#개인작업 #이름 #Portforlio</li>
+                  <li class="project-num4"><img src="./assets/images/yellow-logo.png" alt="프로젝트1 로고"
+                      class="project1-logo">04</li>
+                </ul>
+                <h2>Portforlio</h2>
+                <a href="#" class="project-btn project-btn4">프레젠테이션보러가기</a>
+                <a href="#" class="project-btn  project-btn4">사이트 보러가기</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
         <div class="swiper-button-next"><img src="./assets/images/right.png" alt=""></div>
         <div class="swiper-button-prev"><img src="./assets/images/left.png" alt=""></div>
       </div>
-    
+
 
     </article>
 
@@ -234,17 +243,13 @@
     <section class="aboutme">
       <div class="aboutme-container">
 
-        
+
         <div class="aboutme-h2">
           <h2 class="aboutme-title milky">ABOUT ME<img src="./assets/images/brown-logo.png" alt=""></h2>
         </div>
 
-
-
-
-        
-        <div class="about-me-ul">
-          <ul>
+        <div class="about-me-ul" id="wrapper">
+          <ul id="content">
             <li class="aboutme-item"><a href="#"><img src="./assets/images/aboutme-pofol.png" alt=""></a></li>
             <li class="aboutme-item"><a href="#"><img src="./assets/images/aboutme-study.png" alt=""></a></li>
             <li class="aboutme-item"><a href="#"><img src="./assets/images/aboutme-team.png" alt=""></a></li>
@@ -259,23 +264,11 @@
       <div class="contact">
         <h2>CONTACT</h2>
 
-        <div class="contact-img">
-          <figure>
-            <a href="#"><img src="./assets/images/githube-logo.png" alt=""></a>
-            <figcaption class="githube">GIt Hub</figcaption>
-          </figure>
-
-          <figure class="mail-txt">
-            <a href="#"><img src="./assets/images/mail-logo.png" alt=""></a>
-            <figcaption class="mail">Mail</figcaption>
-          </figure>
-
-          <figure>
-            <a href="#"><img src="./assets/images/kakao-logo.png" alt=""></a>
-            <figcaption class="kakaotalk">Kakao Talk</figcaption>
-          </figure>
-        </div>
-
+        <ul>
+          <li><a href="#"> Git Hub</a></li>
+          <li><a href="#">Mail</a></li>
+          <li><a href="#">Kakao Talk</a></li>
+        </ul>
       </div>
 
       <div class="footer-txt">
