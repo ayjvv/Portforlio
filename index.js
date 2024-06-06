@@ -162,7 +162,6 @@ var swiper = new Swiper('.mySwiper', {
 
 
 
-
 // const jsScroll = document.querySelector('.cover-scroll');
 // const height = jsScroll.getBoundingClientRect().height - 1;
 // const speed = 0.05;
@@ -195,29 +194,39 @@ var swiper = new Swiper('.mySwiper', {
 // smoothScroll();
 
 
+
+
+ /*** 메인 스크롤 효과 ***/
 const jsScroll1 = document.querySelector('.circle1 .txt');
 const jsScroll2 = document.querySelector('.circle2 .txt');
+const jsCoverScroll = document.querySelector('.cover-scroll'); // cover-scroll 요소 선택
 
-const speed = 0.05;
+const textSpeed = 0.04;
+const coverSpeed = 0.02;
 let offset1 = 0;
 let offset2 = 0;
+let offsetCoverScroll = 0;
 
 function smoothScroll() {
   // 스크롤 위치 계산
   const scrollY = window.pageYOffset;
   
   // 텍스트 이동량을 제한된 비율로 조정
-  const maxScroll = 150; // 최대 이동량을 제한할 값 (원하는 값으로 설정 가능)
-  offset1 += (Math.min(scrollY, maxScroll) - offset1) * speed;
-  offset2 += (Math.min(scrollY, maxScroll) - offset2) * speed;
+  const maxTextScroll = 90; // 텍스트 요소의 최대 이동량
+  const maxCoverScroll = 150; // cover-scroll 요소의 최대 이동량
+  offset1 += (Math.min(scrollY, maxTextScroll) - offset1) * textSpeed;
+  offset2 += (Math.min(scrollY, maxTextScroll) - offset2) * textSpeed;
+  offsetCoverScroll += (Math.min(scrollY, maxCoverScroll) - offsetCoverScroll) * coverSpeed;
 
-  // 텍스트 위치 설정
+  // 위치 설정
   const scroll1 = "translateY(-" + offset1 + "px) translateZ(0)";
   const scroll2 = "translateY(-" + offset2 + "px) translateZ(0)";
+  const scrollCover = "translateY(-" + offsetCoverScroll + "px) translateZ(0)";
 
-  // 텍스트에 적용
+  // 텍스트와 cover-scroll 요소에 적용
   jsScroll1.style.transform = scroll1;
   jsScroll2.style.transform = scroll2;
+  jsCoverScroll.style.transform = scrollCover;
 
   // 다음 애니메이션 프레임 요청
   requestAnimationFrame(smoothScroll);
@@ -225,3 +234,24 @@ function smoothScroll() {
 
 // 페이지 로드 후 smoothScroll 함수 호출하여 스크롤 효과 적용
 smoothScroll();
+
+
+
+
+
+ /*** aboutme 이미지 스크롤 효과 ***/
+document.addEventListener("DOMContentLoaded", function() {
+  const aboutMeUl = document.querySelector('.about-me-ul');
+
+  function handleScroll() {
+    const rect = aboutMeUl.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+      aboutMeUl.classList.add('show');
+    } else {
+      aboutMeUl.classList.remove('show');
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+  handleScroll(); 
+});

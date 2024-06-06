@@ -182,7 +182,6 @@
 
 
 /***** project *****/
-
 .project p{
   text-align: center;
   padding-top: 300px;
@@ -458,12 +457,16 @@ swiper-slide {
 }
 
 .about-me-ul {
-  padding-top: 50px; /* h2의 높이만큼 공간을 비워줍니다. */
+  padding-top: 30px;
   margin: 0 auto;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
-.aboutme-item {
-  list-style: none;
+.about-me-ul.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .aboutme-item img {
@@ -476,30 +479,25 @@ swiper-slide {
 
 /***** footer *****/
 footer{
-  margin-top: 200px;
+  margin-top: 200PX;
 }
 .contact h2{
-  font-size: clamp(2rem,3vw,3.5rem);
-  text-align: center;
-  padding-bottom: 10px;
+  font-size: clamp(1.5rem,3vw,3rem);
+  margin-right: 100px;
 }
 .contact {
   width: 95%;
-  margin: 250px auto 0;
+  margin: 0 auto;
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
-  height: 35vh;
-  padding-top: 50px;
-}
-/* .contact-logo{
+  height: 15vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-} */
+}
 .contact ul{
-  margin: 0 auto;
+  /* margin: 0 auto; */
   width: 60vw;
-  height: 20vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -519,9 +517,7 @@ footer{
   color: #fff;
 }
 
-.githube, .kakaotalk{
-  white-space: nowrap;
-}
+
 .footer-txt{
   width: 95%;
   margin: 0 auto;
@@ -555,17 +551,15 @@ footer{
     padding: 2% 5% 2% 5%;
     
   }
+
   
-  .aboutme-container {
-    height: 148vh;
-  }
   .aboutme-h2 img{
     margin-top: 16%;
   }
 }
 @media (max-width : 900px){
   .aboutme-container {
-    height: 150vh;
+    height: 145vh;
   }
   .skill-txt{
     grid-template-columns: 1fr;
@@ -574,5 +568,4 @@ footer{
     margin-bottom: 20px;
   }
 }
-
 
