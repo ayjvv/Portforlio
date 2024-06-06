@@ -627,8 +627,8 @@ footer {
 
 
 ::-webkit-scrollbar {
-  width: 13px;
-  opacity: 0;
+  width: 12px;
+  background-color: #F0EBE8;
 }
 
 ::-webkit-scrollbar-thumb {
