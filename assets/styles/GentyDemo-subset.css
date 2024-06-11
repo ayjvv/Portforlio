@@ -1,0 +1,7 @@
+
+@font-face {
+	font-family: 'GentyDemo';
+	font-weight: 500;
+	font-display: swap;
+	src: local('GentyDemo-Regular'), url(../fonts/AnyConv.com__GentyDemo-Regular.woff2) format('woff2');
+}

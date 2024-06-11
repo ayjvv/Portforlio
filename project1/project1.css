@@ -1,0 +1,174 @@
+@charset "UTF-8";
+  
+/**** fonts ****/
+
+/* 'SpoqaHanSansNeo' */
+@import url(../assets/styles/SpoqaHanSansNeo-subset.css);
+
+:root{
+  /* font */
+  --font-m-ko: 'SpoqaHanSansNeo', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial ,sans-serif;
+
+
+  /* color */
+  --color-point-pink: #EF5D7C;
+  --color-point-yellow: #FFF695;
+  --color-point-blue: #93E1EE;
+}
+
+
+/* body */
+body{
+  font-family: var(--font-m-ko);
+}
+
+header{
+  height: 6vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+/***** main *****/
+.main{
+  height: 100vh;
+  background-color: var(--color-point-yellow);
+  position: relative;
+}
+
+.main .main-img-box .main-title{
+  position: absolute;
+  top: 50%; left: 35%;
+  transform: translateY(-50%);
+  width: 35%;
+}
+
+.main .main-img-box .main-pink{
+  position: absolute;
+  top: 20%;
+  right: 28%; 
+  animation: shake 2.5s infinite;
+}
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.main .main-img-box .main-green{
+  position: absolute;
+  top: 65%;
+  right: 28%;
+  animation: bounce 0.8s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: scale(1, 1); }
+    50% { transform: scale(1.2, 0.8); }
+}
+
+.main .main-img-box .main-blue{
+  position: absolute;
+  top: 48%;
+  left: 32%;
+  animation: rotate 10s infinite linear; 
+}
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(400deg); }
+}
+
+/***** circle *****/
+.circle{
+  background-color: var(--color-point-pink);
+  height: 100vh;
+  position: relative;
+}
+.circle .vedio-circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+}
+.circle .circle-txt {
+
+  /* background-color: #93E1EE; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate2 20s infinite linear;
+  width: 650px; height: 650px;
+  background: url(./images/vedio-circle-txt.png) no-repeat 50% / contain;
+}
+
+@keyframes rotate2 {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.circle .play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6%;
+  transform: translate(-50%, -50%);
+  animation: scale 2s infinite ease-in-out;
+}
+
+@keyframes scale {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.2); }
+}
+
+/***** triangle *****/
+.triangle{
+  background-color: #FFFDE3;
+}
+.triangle-txt{
+  /* background-color: #000;
+  color: #fff; */
+  width: 750px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.triangle-txt .circle1{
+  position: absolute;
+  margin-left: 2px;
+  width: 28px;
+}
+.triangle-txt .heart-txt{
+  margin-left: 27px;
+}
+.triangle-txt .heart{
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 4px;
+  animation: scale2 0.8s infinite ease-in-out;
+}
+@keyframes scale2 {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.triangle-txt .green-circle{
+  margin-left: 5px;
+}
+.triangle-txt .music{
+  width: 18px;
+  position: absolute;
+  margin-left: 12px;
+  margin-top: 5px;
+  animation: shake2 1.5s infinite;
+}
+
+@keyframes shake2 {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(-15deg); }
+  75% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}

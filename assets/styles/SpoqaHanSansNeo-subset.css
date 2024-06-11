@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'SpoqaHanSansNeo';
+	font-weight: 900;
+	font-display: swap;
+	src: local('SpoqaHanSansNeo-Bold'), url(../fonts/SpoqaHanSansNeo-Bold.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'SpoqaHanSansNeo';
+	font-weight: 800;
+	font-display: swap;
+	src: local('SpoqaHanSansNeo-Light'), url(../fonts/SpoqaHanSansNeo-Light.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'SpoqaHanSansNeo';
+	font-weight: 700;
+	font-display: swap;
+	src: local('SpoqaHanSansNeo-Medium'), url(../fonts/SpoqaHanSansNeo-Medium.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'SpoqaHanSansNeo';
+	font-weight: 600;
+	font-display: swap;
+	src: local('SpoqaHanSansNeo-Regular'), url(../fonts/SpoqaHanSansNeo-Regular.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'SpoqaHanSansNeo';
+	font-weight: 500;
+	font-display: swap;
+	src: local('SpoqaHanSansNeo Medium'), url(../fonts/SpoqaHanSansNeo-Medium.subset.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'SpoqaHanSansNeo';
+	font-weight: 400;
+	font-display: swap;
+	src: local('SpoqaHanSansNeo Regular'), url(../fonts/SpoqaHanSansNeo-Regular.subset.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'SpoqaHanSansNeo';
+	font-weight: 300;
+	font-display: swap;
+	src: local('SpoqaHanSansNeo-Thin'), url(../fonts/SpoqaHanSansNeo-Thin.woff2) format('woff2');
+}
+
