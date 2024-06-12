@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         sticks.forEach((stick, index) => {
           setTimeout(() => {
             stick.classList.add("show");
-          }, index * 100); // 필요에 따라 지연 시간을 조정하세요.
+          }, index * 50); // 필요에 따라 지연 시간을 조정하세요.
         });
         isAnimationStarted = true;
       } else if (!entry.isIntersecting) {
@@ -32,29 +32,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+//box scroll
+// window.addEventListener('scroll', function() {
+//   var scrollPosition = window.scrollY;
+//   var windowHeight = window.innerHeight;
 
-window.addEventListener('scroll', function() {
-  var scrollPosition = window.scrollY;
-  var windowHeight = window.innerHeight;
+//   // .box와 .box2의 위치를 스크롤 위치에 맞춰 이동시킴
+//   document.querySelector('.box').style.transform = 'translateY(' + (-scrollPosition * 1) + 'px)';
+//   document.querySelector('.box2').style.transform = 'translateY(' + (-scrollPosition * 1) + 'px)';
 
-  // .box와 .box2의 위치를 스크롤 위치에 맞춰 이동시킴
-  document.querySelector('.box').style.transform = 'translateY(' + (-scrollPosition * 1) + 'px)';
-  document.querySelector('.box2').style.transform = 'translateY(' + (-scrollPosition * 1) + 'px)';
+//   // .content의 위치를 가져옴
+//   var contentElement = document.querySelector('.line');
+//   var contentPosition = contentElement.getBoundingClientRect().top + scrollPosition;
 
-  // .content의 위치를 가져옴
-  var contentElement = document.querySelector('.line');
-  var contentPosition = contentElement.getBoundingClientRect().top + scrollPosition;
-
-  // .content에 닿으면 .box가 500px만큼 위로 올라가게 함
-  if (scrollPosition + windowHeight > contentPosition) {
-    var offset = Math.min(500, scrollPosition + windowHeight - contentPosition);
-    document.querySelector('.box').style.transform = 'translateY(' + (-scrollPosition - offset) + 'px)';
-  }
-});
-
-
+//   // .content에 닿으면 .box가 500px만큼 위로 올라가게 함
+//   if (scrollPosition + windowHeight > contentPosition) {
+//     var offset = Math.min(500, scrollPosition + windowHeight - contentPosition);
+//     document.querySelector('.box').style.transform = 'translateY(' + (-scrollPosition - offset) + 'px)';
+//   }
+// });
 
 
+
+// 마우스휠 라인
 // const blueLine = document.querySelector('.blue-line');
 // const yellowLine = document.querySelector('.yellow-line');
 // const pinkLine = document.querySelector('.pink-line');
@@ -71,4 +71,41 @@ window.addEventListener('scroll', function() {
 //     blueLine.style.transform = `translateX(${bluePosition}px)`;
 //     yellowLine.style.transform = `translateX(${yellowPosition}px)`;
 //     pinkLine.style.transform = `translateX(${pinkPosition}px)`;
+// });
+
+
+/**** 가로슬라이드 ****/
+const horizontalContainer = document.querySelector('.horizontal-container');
+const stickyBox = document.querySelector('.sticky-box');
+const innerBox = document.querySelector('.horizontal-inner-box');
+
+const calcHt = (elem) => {
+  // scrollWidth : 스크롤바에 의해 감춰진 영역 포함 반환
+  // document.documentElement.clientWidth : 실제로 들어가게 될 영역의 너비와 높이 값을 반환
+  return elem.scrollWidth - document.documentElement.clientWidth + document.documentElement.clientHeight;
+}
+
+horizontalContainer.style.height = `${calcHt(innerBox)}px`;
+console.log(calcHt(innerBox));
+
+const scrolled = () => {
+  console.log('stickyBox.offsetTop: ', stickyBox.offsetTop)
+  innerBox.style.transform = `translateX(-${stickyBox.offsetTop}px)`;
+}
+/* 
+  JS.offsetTop; 상대값 반환. offset의 가장 가까운 포지션 값을 기준. 없는 경우 body 기준
+  jQuery.offset().top; 절대값 반환. body 기준
+*/
+
+addEventListener('scroll', scrolled);
+
+
+
+/**** footer 스와이퍼 ****/
+// var swiper = new Swiper(".mySwiper", {
+//   direction: "vertical",
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
 // });

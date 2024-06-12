@@ -23,12 +23,15 @@
 
   <!-- style -->
   <link rel="stylesheet" href="./project1.css">
-
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+  
+  
   <!-- jQuery -->
   <script src="../assets/js/jquery-3.7.1.min.js"></script>
   <script src="../assets/js/jquery-ui.min.js"></script>
   <script src="../assets/js/ScrollTrigger.min.js"></script>
-
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+  
   <!-- plugIn -->
 </head>
 
@@ -74,7 +77,7 @@
             alt="캔디" class="candy"><span class="candy-txt"> 초콜릿</span> 등으로 구성되어 있습니다.<br>
           위니비니는 누구나 믿고 즐길 수 있는 <img src="./images/purple-circle.png" alt="보라원" class="circle1 purple-circle"><img
             src="./images/star.png" alt="별" class="star"><span class="star-txt">제품이</span> 곧
-          최고의 제품이자 서비스라는<img src="./images/blue-circle.png" alt="하늘원" class="circle1 blue-circle"><img
+          최고의 제품이자<br>서비스라는<img src="./images/blue-circle.png" alt="하늘원" class="circle1 blue-circle"><img
             src="./images/service.png" alt="서비스" class="service"><span class="service-txt">신념을</span>바탕으로
           위니비니만의<span>특별한 패키지</span>를 선보이고 있습니다.</p>
       </div>
@@ -143,7 +146,7 @@
     </section>
 
 
-    <!----- black ----->
+    <!----- content ----->
     <section class="content">
       <div class="bg">
         <div class="orange-box"></div>
@@ -162,7 +165,7 @@
             <img src="./images/blue-star.png" alt="" class="blue-star">
           </div>
         </div>
-        
+
         <div class="box2">
           <div class="tape-box2">
             <img src="./images/yellow-tape.png" alt="" class="yellow-tape1">
@@ -186,64 +189,66 @@
     <!----- line ----->
     <section class="line">
       <div class="line-bg">
-      <div class="line-txt">
-        <img src="./images/blue-line3.png" alt="" class="blue-line">
-        <img src="./images/yello-line2.png" alt="" class="yellow-line">
-        <img src="./images/pink-line1.png" alt="" class="pink-line">
+        <div class="line-txt">
+          <img src="./images/blue-line3.png" alt="" class="blue-line">
+          <img src="./images/yello-line2.png" alt="" class="yellow-line">
+          <img src="./images/pink-line1.png" alt="" class="pink-line">
+        </div>
+
+
+        <div class="yellow-store-txt">
+          <img src="./images/store-yellow.png" alt="" class="store-yellow">
+          <img src="./images/store.png" alt="" class="store">
+          <p class="yellow-p"><strong>“위니비니=신뢰”</strong> 이것이 바로 위니비니가 추구하는
+            방향이며 누구나 믿고 즐길 수 있는 최고의 제품이
+            고객에게 제공하는 <strong>“최고의 서비스”</strong>라고 생각합니다.</p>
+
+          <p class="store-span"><span>고객감동 실현</span></p>
+        </div>
+
+        <div class="pink-store-txt">
+          <img src="./images/store-pink.png" alt="">
+          <img src="./images/store.png" alt="">
+          <p>위니비니는 <strong>“도덕과 규범”</strong>을 준수한 클린 경영,
+            기본과 원칙을 철저히 하는 <strong>“청결한 식품관리”</strong>로
+            믿을 수 있는 제품만을 고객에게 제공하는 기업입니다.</p>
+
+          <p><span>신뢰받는 기업</span></p>
+        </div>
+
       </div>
-
-
-      <div class="yellow-store-txt">
-        <img src="./images/store-yellow.png" alt="" class="store-yellow">
-        <img src="./images/store.png" alt="" class="store">
-        <p class="yellow-p"><strong>“위니비니=신뢰”</strong> 이것이 바로 위니비니가 추구하는
-          방향이며 누구나 믿고 즐길 수 있는 최고의 제품이
-          고객에게 제공하는 <strong>“최고의 서비스”</strong>라고 생각합니다.</p>
-
-        <p class="store-span"><span>고객감동 실현</span></p>
-      </div>
-
-      <div class="pink-store-txt">
-        <img src="./images/store-pink.png" alt="">
-        <img src="./images/store.png" alt="">
-        <p>위니비니는 <strong>“도덕과 규범”</strong>을 준수한 클린 경영,
-          기본과 원칙을 철저히 하는 <strong>“청결한 식품관리”</strong>로
-          믿을 수 있는 제품만을 고객에게 제공하는 기업입니다.</p>
-
-        <p><span>신뢰받는 기업</span></p>
-      </div>
-
-    </div>
     </section>
 
 
     <!----- scroll ----->
     <section class="scroll">
-      <div class="scroll-container">
-        <div class="scroll-content scroll1"><img src="./images/slideblue-img.png" alt="">
-          <p>낱개 패키지 제품과
-            캔디머신 등의 소품<span>500여</span> <span>종의 제품</span></p>
-        </div>
-        <div class="scroll-content scroll2"><img src="./images/slidepuple-img.png" alt="">
-          <p>지루할 틈이 없는
-            위니비니의 FUN한 스타일<span>365일</span> <span>1년</span></p>
-        </div>
-        <div class="scroll-content scroll3"><img src="./images/slidepink-img.png" alt="">
-          <p>전국 테마파크, 백화점, 쇼핑몰, 공연장, 서점 등 다양한 위치<span>약 80여</span> <span>개의 매장</span></p>
+      <div class="horizontal-container">
+        <!-- pos: sticky -->
+        <div class="sticky-box">
+          <!-- 실제 가로로 움직이는 영역 -->
+          <ul class="horizontal-inner-box">
+            <li class="row1"><img src="./images/slideblue-img.png" alt="">낱개 패키지 제품과 캔디머신 등의 소품<span>500여</span>
+              <span>종의 제품</span></li>
+            <li class="row2"><img src="./images/slidepuple-img.png" alt="">지루할 틈이 없는
+              위니비니의 FUN한 스타일<span>365일</span> <span>1년</span></li>
+            <li class="row3"><img src="./images/slidepink-img.png" alt=""> 전국 테마파크, 백화점, 쇼핑몰, 공연장, 서점 등 다양한 위치<span>약
+                80여</span> <span>개의 매장</span></li>
+          </ul>
         </div>
       </div>
     </section>
 
 
+
     <!----- slide ----->
     <section class="slide">
       <div class="sldie-container sldie-container1">
-        <ul>
+        <ul class="slide1-img">
           <li><img src="./images/green-1.png" alt=""></li>
           <li><img src="./images/green-2.png" alt=""></li>
         </ul>
 
-        <ul>
+        <ul class="slide1-txt">
           <li><img src="./images/sweet-logo.png" alt=""> <img src="./images/red-candy.png" alt=""></li>
           <li>WEENY BEENY IS..</li>
           <li>
@@ -259,7 +264,7 @@
       </div>
 
       <div class="sldie-container sldie-container2">
-        <ul>
+        <ul class="slide1-img">
           <li><img src="./images/pink-1.png" alt=""></li>
           <li><img src="./images/pink-2.png" alt=""></li>
         </ul>
@@ -279,7 +284,7 @@
       </div>
 
       <div class="sldie-container sldie-container3">
-        <ul>
+        <ul class="slide1-img">
           <li><img src="./images/yellow-1.png" alt=""></li>
           <li><img src="./images/yellow-2.png" alt=""></li>
         </ul>
@@ -319,8 +324,10 @@
       <img src="./images/line.png" alt="">
     </section>
 
+
+    <!----- img-box ----->
     <section class="img-box">
-      <ul>
+      <ul class="img1-box">
         <li><img src="./images/march-1.png" alt=""></li>
         <li><img src="./images/march-2.png" alt=""></li>
         <li><img src="./images/march-3.png" alt=""></li>
@@ -335,7 +342,7 @@
           새로움을 준비하시는 분들께 맞춤 선물</p>
       </div>
 
-      <ul>
+      <ul class="img1-box img2">
         <li><img src="./images/february-1.png" alt=""></li>
         <li><img src="./images/february-2.png" alt=""></li>
         <li><img src="./images/february-3.png" alt=""></li>
@@ -351,7 +358,7 @@
           졸업 (졸업선물로도 좋은 달콤한 세트)</p>
       </div>
 
-      <ul>
+      <ul class="img1-box img3">
         <li><img src="./images/may-1.png" alt=""></li>
         <li><img src="./images/may-2.png" alt=""></li>
         <li><img src="./images/may-3.png" alt=""></li>
@@ -380,11 +387,21 @@
         목표로 2002년 3월 사업을 시작하였습니다.</p>
     </div>
 
-    <div class="swiper">
+    <!-- <div class="swiper">
       <div class="swiper-container"><img src="./images/slide-1.png" alt=""></div>
       <div class="swiper-container"><img src="./images/slide-2.png" alt=""></div>
       <div class="swiper-container"><img src="./images/slide-3.png" alt=""></div>
       <div class="swiper-container"><img src="./images/slide-4.png" alt=""></div>
+    </div> -->
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/slide-1.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/slide-2.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/slide-3.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/slide-4.png" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <div>
@@ -395,8 +412,6 @@
       <a href="../index.html">PORTFOLIO 보러가기</a>
     </div>
   </footer>
-
-
 
 
   <script src="./project1.js"></script>

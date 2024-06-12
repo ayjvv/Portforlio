@@ -21,13 +21,18 @@
 body{
   font-family: var(--font-m-ko);
   overflow-x: hidden;
+  /* width: 100vw; */
+  position: relative;
 }
+
+
 
 header{
   height: 6vh;
   background-color: #fff;
   display: flex;
   justify-content: center;
+  /* width: 100vw; */
 }
 
 /***** main *****/
@@ -35,6 +40,7 @@ header{
   height: 100vh;
   background-color: var(--color-point-yellow);
   position: relative;
+  /* width: 100vw; */
 }
 
 .main .main-img-box .main-title{
@@ -85,6 +91,7 @@ header{
   background-color: var(--color-point-pink);
   height: 100vh;
   position: relative;
+  /* width: 100vw; */
 }
 .circle .vedio-circle{
   position: absolute;
@@ -124,11 +131,13 @@ header{
   50% { transform: translate(-50%, -50%) scale(1.2); }
 }
 
+
 /***** triangle *****/
 .triangle{
   background-color: #FFFDE3;
   padding-top: 170px;
   position: relative;
+  /* width: 100vw; */
 }
 .triangle-txt{
   position: relative;
@@ -154,7 +163,7 @@ header{
   position: absolute;
   margin-top: 7px;
   margin-left: 4px;
-  animation: scale2 0.8s infinite ease-in-out;
+  animation: scale2 0.6s infinite ease-in-out;
 }
 @keyframes scale2 {
   0%, 100% { transform: scale(1); }
@@ -169,7 +178,7 @@ header{
   position: absolute;
   margin-left: 12px;
   margin-top: 5px;
-  animation: shake2 1.5s infinite;
+  animation: shake2 1s infinite;
 }
 
 @keyframes shake2 {
@@ -188,7 +197,7 @@ header{
   margin-left: 5.8px;
   width: 20px;
   margin-top: 3px;
-  animation: bounce 0.9s infinite;
+  animation: bounce 0.7s infinite;
 }
 .triangle-txt .candy-txt{
   margin-left: 28px;
@@ -224,7 +233,7 @@ header{
   width: 17.5px;
   margin-top: 3.3px;
   margin-left: 5.7px;
-  animation: scale2 0.7s infinite ease-in-out;
+  animation: scale2 0.5s infinite ease-in-out;
 }
 
 @keyframes scale2 {
@@ -234,6 +243,9 @@ header{
 
 .triangle-txt .service-txt{
   margin-left: 32px;
+}
+.triangle-box{
+  width: 100%;
 }
 
 .triangle .stick{
@@ -454,12 +466,11 @@ header{
 .bg{
   position: relative;
   z-index: 999;
-  background-color: #FFF695;
+  background-color: #000;
   height: 100vh;
-  width: 100vw;
+  /* width: 100%; */
 }
 .box{
-  padding-top: 300vh;
 }
 .orange-box{
   background: url(./images/orange-그물.png) no-repeat;
@@ -577,6 +588,7 @@ header{
 .line-bg{
   background-color: #fff;
   position: relative;
+  width: 100%;
 }
 .store{
   padding-top: 100px;
@@ -632,12 +644,98 @@ header{
   border-radius: 20px;
 }
 
-.scroll-container {
-  overflow-x: auto; /* 가로 스크롤을 활성화합니다. */
-  white-space: nowrap; /* 자식 요소들이 줄 바꿈되지 않고 한 줄에 모두 표시됩니다. */
+.horizontal-container {
+  width: 100vw;
+  position: relative;
+  text-align: center;
+}
+.horizontal-container .sticky-box {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.horizontal-container .sticky-box .horizontal-inner-box {
+  position: absolute;
+  display: flex;
+  width: 300vw;
+}
+.horizontal-container .sticky-box .horizontal-inner-box li {
+  width: 100vw;
+  height: 100vh;
+}
+.horizontal-container .sticky-box .horizontal-inner-box .row1 { background-color: #869AEC; }
+.horizontal-container .sticky-box .horizontal-inner-box .row2 { background-color: #A57ECC; }
+.horizontal-container .sticky-box .horizontal-inner-box .row3 { background-color: #F979B7; }
+
+
+/**** slide ****/
+.sldie-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+}
+.sldie-container1{
+  width: 100vw;
+  background-color: #89D4B4;
+  position: sticky;
+  top: 0;
+  z-index: -9999;
+}
+.sldie-container1 p{
+  width: 400px;
+}
+.slide1-img {
+  margin-left: 230px;
+}
+.sldie-container2{
+  position: sticky;
+  top: 0;
+  z-index: -999;
+  background-color: #FF7491;
+}
+.sldie-container3{
+  background-color: #FED790;
 }
 
-.scroll-content {
-  display: inline-block; /* 요소들이 인라인으로 배치됩니다. */
-  margin-right: 20px; /* 요소 사이에 간격을 주세요. */
+
+
+
+
+
+
+/**** img-box ****/
+.img-box{
+  margin-top: 200px;
+  position: relative;
 }
+.img1-box{
+  display: flex;
+  margin-bottom: 400px;
+}
+.img1-box li{
+  position: absolute;
+  left: 250px;
+}
+.img1-box li:first-child{
+  transform: rotate(5deg);
+}
+.img1-box li:nth-child(2){
+  transform: rotate(10deg);
+}
+.img1-box li:nth-child(3){
+  transform: rotate(-10deg);
+}
+.img2{
+  position: absolute;
+  right: 700px;
+}
+.img3{
+
+}
+
+
+
+
+
+/**** footer ****/
+
