@@ -20,6 +20,7 @@
 /* body */
 body{
   font-family: var(--font-m-ko);
+  overflow-x: hidden;
 }
 
 header{
@@ -126,14 +127,20 @@ header{
 /***** triangle *****/
 .triangle{
   background-color: #FFFDE3;
+  padding-top: 170px;
+  position: relative;
 }
 .triangle-txt{
-  /* background-color: #000;
-  color: #fff; */
-  width: 750px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 9999;
+  background-color: #000;
+  color: #fff;
+  border-radius: 25px;
+  width: 870px;
+  padding: 90px;
+  margin: 0 auto 180px;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .triangle-txt .circle1{
   position: absolute;
@@ -171,4 +178,466 @@ header{
   50% { transform: rotate(-15deg); }
   75% { transform: rotate(15deg); }
   100% { transform: rotate(0deg); }
+}
+
+.triangle-txt .orange-circle{
+  margin-bottom: 2px;
+}
+.triangle-txt .candy{
+  position: absolute;
+  margin-left: 5.8px;
+  width: 20px;
+  margin-top: 3px;
+  animation: bounce 0.9s infinite;
+}
+.triangle-txt .candy-txt{
+  margin-left: 28px;
+}
+@keyframes bounce {
+  0%, 100% { transform: scale(1, 1); }
+    50% { transform: scale(1.2, 0.7); }
+}
+
+.triangle-txt .star{
+  position: absolute;
+  width: 18px;
+  margin-left: 7px;
+  margin-top: 3.5px;
+  animation: twinkle 0.8s infinite;
+}
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+.triangle-txt .star-txt{
+  margin-left: 33px;
+}
+
+.triangle-txt .service{
+  position: absolute;
+  width: 17.5px;
+  margin-top: 3.3px;
+  margin-left: 5.7px;
+  animation: scale2 0.7s infinite ease-in-out;
+}
+
+@keyframes scale2 {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.triangle-txt .service-txt{
+  margin-left: 32px;
+}
+
+.triangle .stick{
+  position: absolute;
+  top: 0;
+  background-color: #93E1EE;
+  width: 35px;
+  height: 170vh;
+  transform: translateY(160vh);
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+.triangle .stick1{
+  left: 70px;
+}
+.triangle .stick2{
+  left: 140px;
+}
+.triangle .stick3{
+  left: 210px;
+}
+.triangle .stick4{
+  left: 280px;
+}
+.triangle .stick5{
+  left: 350px;
+}
+.triangle .stick6{
+  left: 420px;
+}
+.triangle .stick7{
+  left: 490px;
+}
+.triangle .stick8{
+  left: 560px;
+}
+.triangle .stick9{
+  left: 630px;
+}
+.triangle .stick10{
+  left: 700px;
+}
+.triangle .stick11{
+  left: 770px;
+}
+.triangle .stick12{
+  left: 840px;
+}
+.triangle .stick13{
+  left: 910px;
+}
+.triangle .stick14{
+  left: 980px;
+}
+.triangle .stick15{
+  left: 1050px;
+}
+.triangle .stick16{
+  left: 1120px;
+}
+.triangle .stick17{
+  left: 1190px;
+}
+.triangle .stick18{
+  left: 1260px;
+}
+.triangle .stick19{
+  left: 1330px;
+}
+.triangle .stick20{
+  left: 1400px;
+}
+.triangle .stick21{
+  left: 1470px;
+}
+.triangle .stick22{
+  left: 1530px;
+}
+.triangle .stick23{
+  left: 1600px;
+}
+.triangle .stick24{
+  left: 1670px;
+}
+.triangle .stick25{
+  left: 1740px;
+}
+.triangle .stick26{
+  left: 1810px;
+}
+.triangle .stick27{
+  left: 1880px;
+  width: 23px;
+}
+.stick.show {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.triangle-box .triangle-txt{
+  z-index: 99;
+  position: relative;
+}
+
+.triangle-box .white-star, .bluegreen-star{
+  position: absolute;
+  top: 45%;
+  right: 50%;
+  width: 33px;
+}
+.bluegreen-star{
+  width: 23px;
+}
+.triangle-box .white-star1{
+  top: 52%;
+  right: 58%;
+  animation: twinkle2 0.7s infinite;
+}
+.triangle-box .white-star2{
+  top: 57%;
+  right: 40%;
+  animation: twinkle1 0.7s infinite;
+}
+.triangle-box .white-star3{
+  top: 92%;
+  right: 25%;
+  animation: twinkle2 0.7s infinite;
+}
+.triangle-box .white-star4{
+  top: 80%;
+  right: 15%;
+  animation: twinkle1 0.7s infinite;
+}
+.triangle-box .white-star5{
+  top: 80%;
+  left: 12%;
+  animation: twinkle2 0.7s infinite;
+}
+.triangle-box .white-star6{
+  top: 93%;
+  left: 23%;
+  animation: twinkle1 0.7s infinite;
+}
+.triangle-box .white-star7{
+  top: 70%;
+  right: 30%;
+  animation: twinkle2 0.7s infinite;
+}
+.triangle-box .snack-logo{
+  position: absolute;
+  top: 63%;
+  left: 22%;
+}
+.triangle-box .bluegreen-star1{
+  top: 60%;
+  right: 28%;
+  animation: twinkle2 0.8s infinite;
+}
+.triangle-box .bluegreen-star2{
+  top: 80%;
+  right: 25%;
+  animation: twinkle2 0.8s infinite;
+}
+.triangle-box .bluegreen-star3{
+  top: 93%;
+  right: 6%;
+  animation: twinkle1 0.8s infinite;
+}
+.triangle-box .bluegreen-star4{
+  top: 90%;
+  left: 8%;
+  animation: twinkle2 0.8s infinite;
+}
+.triangle-box .bluegreen-star5{
+  top: 70%;
+  left: 25%;
+  animation: twinkle1 1s infinite;
+}
+.triangle-box .bluegreen-star6{
+  animation: twinkle1 1s infinite;
+}
+@keyframes twinkle1 {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+@keyframes twinkle2 {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0.8);
+  }
+}
+
+.triangle-box .txt{
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: absolute;
+  top: 77%;
+  left: 32%;
+  text-align: center;
+  width: 35%;
+}
+.triangle-box .txt1{
+  top: 82%;
+}
+
+
+/***** content *****/
+
+.bg{
+  position: relative;
+  z-index: 999;
+  background-color: #FFF695;
+  height: 100vh;
+  width: 100vw;
+}
+.box{
+  padding-top: 300vh;
+}
+.orange-box{
+  background: url(./images/orange-그물.png) no-repeat;
+  width: 80%;
+  height: 80vh;
+  position: absolute;
+  top: 21%;
+  right: 6%;
+}
+.tape-box{
+  position: absolute;
+  margin-top: 250px;
+  left: 330px;
+}
+
+.tape-box .purple-tape1{
+  position: absolute;
+  bottom: 330px;
+  left: -60px;
+}
+.tape-box .purple-tape2{
+  position: absolute;
+  bottom: -15px;
+  left: 560px;
+}
+
+.green-content{
+  position: relative;
+}
+.green-content .yummy{
+  position: absolute;
+  top: 220px;
+  right: 39%;
+}
+.green-content .orange-star{
+  position: absolute;
+  right: 35%;
+  top: 220px;
+}
+.green-content .yummy-box{
+  position: absolute;
+  right: 19%;
+  top: 160px;
+}
+.green-content .yummy-circle{
+  position: absolute;
+  right: 28%;
+  top: 350px;
+}
+.green-content .smile{
+  position: absolute;
+  right: 20%;
+  bottom: -600px;
+}
+.green-content .blue-star{
+  position: absolute;
+  bottom: -650px;
+  right: 16%;
+}
+
+.box2{
+  margin-top: 800px;
+  position: absolute;
+  /* display: none; */
+}
+
+.tape-box2{
+  position: absolute;
+  margin-top: 250px;
+  left: 330px;
+}
+
+.tape-box2 .yellow-tape1{
+  position: absolute;
+  bottom: 380px;
+  left: -20px;
+}
+.tape-box2 .yellow-tape2{
+  position: absolute;
+  bottom: -45px;
+  left: 520px;
+}
+.red-content .sweet{
+  position: absolute;
+  left: 1000px;
+  top: 250px;
+}
+.red-content .pink-star{
+  position: absolute;
+  left: 1520px;
+  top: 240px;
+}
+.red-content .summer-circle{
+  position: absolute;
+  top: 390px;
+  left: 1000px;
+}
+.red-content .summer{
+  position: absolute;
+  top: 210px;
+  left: 1200px;
+}
+.red-content .heart-smile{
+  position: absolute;
+  top: 550px;
+  left: 1400px;
+}
+.red-content .yellow-star{
+  position: absolute;
+  top: 650px;
+  left: 1300px;
+}
+
+/***** line *****/
+.line-bg{
+  background-color: #fff;
+  position: relative;
+}
+.store{
+  padding-top: 100px;
+}
+.line-txt{
+  height: 100vh;
+}
+.line-txt .blue-line{
+  position: absolute;
+}
+.line-txt .yellow-line{
+  position: absolute;
+}
+.line-txt .pink-line{
+  position: absolute;
+  top: 150px;
+}
+.blue-line, .yellow-line, .pink-line {
+  position: absolute;
+  top: 0;
+  transition: transform 0.1s;
+}
+
+.yellow-store-txt{
+  margin-left: 30%;
+}
+.store-yellow{
+  position: absolute;
+}
+.store{
+  position: absolute;
+  z-index: 999;
+  left: 610px;
+  /* background-color: #93E1EE; */
+}
+.yellow-store-txt .yellow-p{
+  /* position: absolute; */
+  width: 410px;
+  padding-top: 130px;
+  margin-left: 500px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.store-span{
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 720px;
+  background-color: #F69B31;
+  color: #fff;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.scroll-container {
+  overflow-x: auto; /* 가로 스크롤을 활성화합니다. */
+  white-space: nowrap; /* 자식 요소들이 줄 바꿈되지 않고 한 줄에 모두 표시됩니다. */
+}
+
+.scroll-content {
+  display: inline-block; /* 요소들이 인라인으로 배치됩니다. */
+  margin-right: 20px; /* 요소 사이에 간격을 주세요. */
 }
