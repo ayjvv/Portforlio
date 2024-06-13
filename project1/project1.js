@@ -124,3 +124,7 @@ document.querySelector('.plus1').addEventListener('click', function() {
 
 
 var swiper = new Swiper(".mySwiper", {});
+
+
+
+
