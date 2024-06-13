@@ -109,3 +109,18 @@ addEventListener('scroll', scrolled);
 //     clickable: true,
 //   },
 // });
+
+
+document.querySelector('.plus1').addEventListener('click', function() {
+  document.querySelectorAll('.img-list li').forEach(function(li) {
+    if (li.style.position === 'relative') {
+      li.style.position = 'absolute';
+    } else {
+      li.style.position = 'relative';
+    }
+  });
+});
+
+
+
+var swiper = new Swiper(".mySwiper", {});

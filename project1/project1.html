@@ -23,6 +23,7 @@
 
   <!-- style -->
   <link rel="stylesheet" href="./project1.css">
+
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
   
   
@@ -31,7 +32,7 @@
   <script src="../assets/js/jquery-ui.min.js"></script>
   <script src="../assets/js/ScrollTrigger.min.js"></script>
   <script src="../assets/js/swiper-bundle.min.js"></script>
-  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
   <!-- plugIn -->
 </head>
 
@@ -73,7 +74,7 @@
             src="./images/heart.png" alt="하트" class="heart"><span class="heart-txt">담긴 패키지 상품으로</span>
           천연색소&천연향,<img src="./images/green-circle.png" alt="초록원" class="circle1 green-circle"><img
             src="./images/music.png" alt="음표" class="music"><br>유기농 구미 및 슈가프리
-          캔디,<img src="./images/orange-circle.png" alt="주황원" class="circle1 orange-circle"><img src="./images/candy.png"
+          캔디<img src="./images/orange-circle.png" alt="주황원" class="circle1 orange-circle"><img src="./images/candy.png"
             alt="캔디" class="candy"><span class="candy-txt"> 초콜릿</span> 등으로 구성되어 있습니다.<br>
           위니비니는 누구나 믿고 즐길 수 있는 <img src="./images/purple-circle.png" alt="보라원" class="circle1 purple-circle"><img
             src="./images/star.png" alt="별" class="star"><span class="star-txt">제품이</span> 곧
@@ -148,6 +149,9 @@
 
     <!----- content ----->
     <section class="content">
+
+
+      
       <div class="bg">
         <div class="orange-box"></div>
         <div class="box">
@@ -219,7 +223,6 @@
       </div>
     </section>
 
-
     <!----- scroll ----->
     <section class="scroll">
       <div class="horizontal-container">
@@ -227,11 +230,11 @@
         <div class="sticky-box">
           <!-- 실제 가로로 움직이는 영역 -->
           <ul class="horizontal-inner-box">
-            <li class="row1"><img src="./images/slideblue-img.png" alt="">낱개 패키지 제품과 캔디머신 등의 소품<span>500여</span>
+            <li class="row1"><img src="./images/slideblue-img.png" alt="">낱개 패키지 제품과 캔디머신 등의 소품<span class="num">500여</span>
               <span>종의 제품</span></li>
             <li class="row2"><img src="./images/slidepuple-img.png" alt="">지루할 틈이 없는
-              위니비니의 FUN한 스타일<span>365일</span> <span>1년</span></li>
-            <li class="row3"><img src="./images/slidepink-img.png" alt=""> 전국 테마파크, 백화점, 쇼핑몰, 공연장, 서점 등 다양한 위치<span>약
+              위니비니의 FUN한 스타일<span class="num">365일</span> <span>1년</span></li>
+            <li class="row3"><img src="./images/slidepink-img.png" alt=""> 전국 테마파크, 백화점, 쇼핑몰, 공연장, 서점 등 다양한 위치<span class="num">약
                 80여</span> <span>개의 매장</span></li>
           </ul>
         </div>
@@ -249,7 +252,7 @@
         </ul>
 
         <ul class="slide1-txt">
-          <li><img src="./images/sweet-logo.png" alt=""> <img src="./images/red-candy.png" alt=""></li>
+          <li><img src="./images/sweet-logo.png" alt="" class="sweet-logo"> <img src="./images/red-candy.png" alt="" class="red-candy"></li>
           <li>WEENY BEENY IS..</li>
           <li>
             <p>Weeny Beeny 위니비니는 미국 및 유럽에서 보편화되어있는 CONFECTIONERY STORE로 초콜릿, 캔디, 쿠키, 젤리, 구미, 캐러멜 등 소비자의 다양한 기호에 따라 원하는
@@ -269,8 +272,8 @@
           <li><img src="./images/pink-2.png" alt=""></li>
         </ul>
 
-        <ul>
-          <li><img src="./images/love-logo.png" alt=""> <img src="./images/heart-logo.png" alt=""></li>
+        <ul class="slide2-txt">
+          <li><img src="./images/love-logo.png" alt="" class="love-logo"> <img src="./images/heart-logo.png" alt="" class="heart-logo"></li>
           <li>QUALITY & SERVICE</li>
           <li>
             <p>위니비니는 초콜릿, 캔디, 젤리, 구미, 캐러멜 등
@@ -289,8 +292,8 @@
           <li><img src="./images/yellow-2.png" alt=""></li>
         </ul>
 
-        <ul>
-          <li><img src="./images/happy-logo.png" alt=""> <img src="./images/green-candy.png" alt=""></li>
+        <ul class="slide3-txt">
+          <li><img src="./images/happy-logo.png" alt="" class="happy-logo"> <img src="./images/green-candy.png" alt="" class="green-candy"></li>
           <li>FUN & SERVICE</li>
           <li>
             <p>Weeny Beeny는 언제나 즐겁고 새롭습니다. 밸런타인데이, 화이트데이, 어린이날, 핼러윈데이,
@@ -311,35 +314,39 @@
 
     <!----- txt-box ----->
     <section class="txt-box">
-      <div class="txt1">
-        <p>최고의 품질, 다양한 제품</p><img src="./images/yellow-flower.png" alt="">
+      <div class="txt-line">
+      <div class="txt-line1">
+        <p>최고의 품질, 다양한 제품<img src="./images/yellow-flower.png" alt=""></p>
       </div>
-      <div class="txt2"><img src="./images/green-star.png" alt="">
-        <p>위니비니만의 전문적인 배송 시스템</p>
+      <div class="txt-line2">
+        <p><img src="./images/green-star.png" alt="">위니비니만의 전문적인 배송 시스템</p>
       </div>
-      <div class="txt3">
+      <div class="txt-line3">
         <p>오랜 노하우로 만들어진 제품 운영 및 관리 능력</p>
       </div>
-
-      <img src="./images/line.png" alt="">
+</div>
+      <img src="./images/line.png" alt="" class="txt-blue-line">
     </section>
 
 
     <!----- img-box ----->
     <section class="img-box">
-      <ul class="img1-box">
+      <ul class="img1-box img-list">
         <li><img src="./images/march-1.png" alt=""></li>
         <li><img src="./images/march-2.png" alt=""></li>
         <li><img src="./images/march-3.png" alt=""></li>
         <li><img src="./images/march-4.png" alt=""></li>
       </ul>
       <div class="March">
-        <img src="./images/plus.png" alt="">
+        
+        <img src="./images/plus.png" alt="" class="plus1">
         <img src="./images/arrow1.png" alt="">
+        <div class="march-txt">
         <h2>March</h2>
-        <p>여자친구를 위한 화이트데이
-          (달콤한 사랑을 선물하세요)
+        <p>여자친구를 위한 화이트데이<br>
+          (달콤한 사랑을 선물하세요)<br>
           새로움을 준비하시는 분들께 맞춤 선물</p>
+      </div>
       </div>
 
       <ul class="img1-box img2">
@@ -352,10 +359,12 @@
       <div class="February">
         <img src="./images/plus.png" alt="">
         <img src="./images/arrow2.png" alt="">
+        <div class="february-txt">
         <h2>February</h2>
-        <p>남자친구를 위한 밸런타인데이
-          (달콤한 사랑을 선물하세요)
+        <p>남자친구를 위한 밸런타인데이<br>
+          (달콤한 사랑을 선물하세요)<br>
           졸업 (졸업선물로도 좋은 달콤한 세트)</p>
+        </div>
       </div>
 
       <ul class="img1-box img3">
@@ -368,17 +377,19 @@
       <div class="MAY">
         <img src="./images/plus.png" alt="">
         <img src="./images/arrow3.png" alt="">
+        <div class="may-txt">
         <h2>MAY</h2>
-        <p>어린이날 (간식에도 좋고 놀이에도 좋은 상품)
+        <p>어린이날 (간식에도 좋고 놀이에도 좋은 상품)<br>
           어버이날 (달달한 간식 좋아하시는 부모님들께)
           가정의 날 (가까운 분들께 감사의 선물)</p>
+        </div>
       </div>
     </section>
   </main>
 
   <!----- footer ----->
   <footer>
-    <div>
+    <div class="footer">
       <h3>기본과 원칙을 지키며 내일을 창조하겠습니다.</h3>
       <p>정직함이 곧 기업의 이미지라는 생각을 가지고,
         기본과 원칙을 준수한 우수한 제품만을
