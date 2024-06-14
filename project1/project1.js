@@ -111,20 +111,64 @@ addEventListener('scroll', scrolled);
 // });
 
 
-document.querySelector('.plus1').addEventListener('click', function() {
-  document.querySelectorAll('.img-list li').forEach(function(li) {
-    if (li.style.position === 'relative') {
-      li.style.position = 'absolute';
-    } else {
-      li.style.position = 'relative';
-    }
+// document.querySelector('.plus1').addEventListener('click', function() {
+//   document.querySelectorAll('.img-list li').forEach(function(li) {
+//     if (li.style.position === 'relative') {
+//       li.style.position = 'absolute';
+//     } else {
+//       li.style.position = 'relative';
+//     }
+//   });
+// });
+
+// var swiper = new Swiper(".mySwiper", {});
+
+
+
+
+//이미지 정렬 플러스버튼
+document.querySelector('.menu-btn1').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelectorAll('.img-list li img').forEach(function(img) {
+    img.classList.toggle('on');
+  });
+});
+
+document.querySelector('.menu-btn2').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelectorAll('.img2 li img').forEach(function(img) {
+    img.classList.toggle('on');
+  });
+});
+
+document.querySelector('.menu-btn3').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelectorAll('.img3 li img').forEach(function(img) {
+    img.classList.toggle('on');
   });
 });
 
 
 
-var swiper = new Swiper(".mySwiper", {});
 
 
+//line들 움직이기
+window.addEventListener('scroll', function() {
+  // .line-bg 요소의 위치와 높이 가져오기
+  var lineBg = document.querySelector('.line-bg');
+  var rect = lineBg.getBoundingClientRect();
 
 
+  if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+
+    setTimeout(function() {
+      document.querySelectorAll('.blue-line, .yellow-line, .pink-line').forEach(function(line) {
+        line.classList.add('off');
+      });
+    }, 450); // 딜레이
+  } else {
+    document.querySelectorAll('.blue-line, .yellow-line, .pink-line').forEach(function(line) {
+      line.classList.remove('off');
+    });
+  }
+});
