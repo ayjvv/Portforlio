@@ -129,6 +129,7 @@ addEventListener('scroll', scrolled);
 //이미지 정렬 플러스버튼
 document.querySelector('.menu-btn1').addEventListener('click', function() {
   this.classList.toggle('active');
+  this.classList.toggle('paused');
   document.querySelectorAll('.img-list li img').forEach(function(img) {
     img.classList.toggle('on');
   });
@@ -136,6 +137,7 @@ document.querySelector('.menu-btn1').addEventListener('click', function() {
 
 document.querySelector('.menu-btn2').addEventListener('click', function() {
   this.classList.toggle('active');
+  this.classList.toggle('paused');
   document.querySelectorAll('.img2 li img').forEach(function(img) {
     img.classList.toggle('on');
   });
@@ -143,11 +145,11 @@ document.querySelector('.menu-btn2').addEventListener('click', function() {
 
 document.querySelector('.menu-btn3').addEventListener('click', function() {
   this.classList.toggle('active');
+  this.classList.toggle('paused');
   document.querySelectorAll('.img3 li img').forEach(function(img) {
     img.classList.toggle('on');
   });
 });
-
 
 
 
@@ -171,4 +173,65 @@ window.addEventListener('scroll', function() {
       line.classList.remove('off');
     });
   }
+});
+
+
+// box 슬라이드
+document.addEventListener('DOMContentLoaded', function() {
+  var swiper = new Swiper('.mySwiper', {
+    // Swiper 옵션
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+});
+
+
+
+//스토어 사라짐
+jQuery(function($) {
+  // 'animated' 클래스를 뷰에 있는 '.animatable' 요소에 추가하는 함수
+  var doAnimations = function() {
+    // 현재 오프셋을 계산하고 store-box 내부의 모든 애니메이션 가능한 요소를 가져옵니다.
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.store-box .animatable');
+    
+    // 모든 애니메이션 가능한 요소를 확인하고 필요하면 애니메이션을 적용합니다.
+    $animatables.each(function(i) {
+      var $animatable = $(this);
+      if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+        $animatable.removeClass('animatable').removeClass('disappearing').addClass('animated');
+      }
+    });
+
+    // 화면에 보이지 않는 animated 요소를 다시 animatable로 바꿈
+    $('.store-box .animated').each(function(i) {
+      var $animated = $(this);
+      if (($animated.offset().top + $animated.height() - 20) >= offset) {
+        $animated.removeClass('animated').addClass('disappearing');
+        setTimeout(function() {
+          $animated.removeClass('disappearing').addClass('animatable');
+        }, 1000); // fadeOut 애니메이션 시간과 일치하도록 타이머 설정
+      }
+    });
+  };
+  
+  // 스크롤 시 doAnimations 함수를 연결하고, 초기 스크롤 이벤트를 트리거합니다.
+  $(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
+});
+
+
+
+var swiper = new Swiper(".swiper2", {
+  direction: "vertical", // 슬라이더의 방향을 세로로 설정
+  pagination: {
+    el: ".swiper-pagination2", // 페이지네이션 요소 설정
+    clickable: true, // 페이지네이션 클릭 가능하게 설정
+  },
 });
