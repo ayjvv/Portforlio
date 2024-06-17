@@ -228,10 +228,59 @@ jQuery(function($) {
 
 
 
-var swiper = new Swiper(".swiper2", {
-  direction: "vertical", // 슬라이더의 방향을 세로로 설정
-  pagination: {
-    el: ".swiper-pagination2", // 페이지네이션 요소 설정
-    clickable: true, // 페이지네이션 클릭 가능하게 설정
-  },
+// document.addEventListener('DOMContentLoaded', function() {
+//   // 첫 번째 Swiper 초기화
+//   var swiper1 = new Swiper('.mySwiper', {
+//     loop: true,
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+//   });
+
+//   // 두 번째 Swiper 초기화
+//   var swiper2 = new Swiper('.swiper2', {
+//     direction: 'vertical', // 슬라이더의 방향을 세로로 설정
+//     pagination: {
+//       el: '.swiper-pagination2', // 페이지네이션 요소 설정
+//       clickable: true, // 페이지네이션 클릭 가능하게 설정
+//     },
+//   });
+// });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  function animateValue(element, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      element.innerText = Math.floor(progress * (end - start) + start);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+
+  const counter = document.getElementById('counter');
+  const yearCounter = document.getElementById('yearCounter');
+  const countCounter = document.getElementById('countCounter');
+  const container = document.querySelector('.horizontal-container');
+
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      animateValue(counter, 30, 500, 2000); // counter 애니메이션
+      animateValue(yearCounter, 10, 365, 3700); // yearCounter 애니메이션
+      animateValue(countCounter, 0, 80, 5000); // countCounter 애니메이션
+      observer.unobserve(container); // 한 번만 실행되도록 관찰 해제
+    }
+  });
+
+  observer.observe(container);
 });

@@ -25,14 +25,24 @@ body{
   position: relative;
 }
 
-
-
 header{
   height: 6vh;
   background-color: #fff;
   display: flex;
   justify-content: center;
   /* width: 100vw; */
+}
+header div{
+  position: absolute;
+  right: 60px;
+  top: 12px;
+}
+.git, .kakao, .mail{
+  width: 30px;
+  opacity: 0.45;
+}
+.git:hover, .kakao:hover, .mail:hover{
+  opacity: 1;
 }
 
 /***** main *****/
@@ -472,7 +482,11 @@ header{
   z-index: 999;
   padding-top: 155px;
 }
-
+.yellow-arrow{
+  position: absolute;
+  right: 48%;
+  top: 130px;
+}
 
 .orange-box{
   background: url(./images/orange-그물.png) no-repeat;
@@ -586,8 +600,12 @@ header{
 }
 
 .store{
-  padding-top: 100px;
+  padding-top: 90px;
+  position: absolute;
+  left: 460px;
+  animation: shake3 8s infinite;
 }
+
 .line-txt{
   height: 100vh;
 }
@@ -670,11 +688,8 @@ header{
   position: absolute;
   left: 420px;
 }
-.store{
-  position: absolute;
-  left: 460px;
-  /* bottom: 45px; */
-}
+
+
 .yellow-p{
   color: #000;
   width: 500px;
@@ -726,14 +741,74 @@ header{
 }
 
 .candy-span{
-  background-color: #69B393;
+  /* background-color: #69B393; */
   display: block;
-  width: 400px;
+  width: 150px;
   position: relative;
+  top: 70px;
 }
-.candy-span strong{
-  font-size: 5rem;
-  /* position: absolute; */
+.row1 img{
+  animation: shake3 3.5s infinite;
+}
+.row2 img{
+  animation: shake3 3.5s infinite;
+}
+.row3 img{
+  animation: shake3 3.5s infinite;
+}
+@keyframes shake3 {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.row1 strong{
+  font-size: 8rem;
+  /* background-color: #93E1EE; */
+  margin-left: 180px;
+  /* margin-bottom: 100px; */
+  position: absolute;
+  bottom: 370px;
+}
+.num{
+  position: absolute;
+  margin-left: 420px;
+  bottom: 400px;
+}
+
+.row2 .fun-span{
+  /* background-color: #93E1EE; */
+  position: relative;
+  top: 70px;
+}
+.row2 .fun-span strong{
+  padding-left: 75px;
+}
+.year{
+  font-size: 8rem;
+  margin-left: 20px;
+  /* background-color: #869AEC; */
+  position: absolute;
+  bottom: 370px;
+}
+.count{
+  font-size: 8rem;
+  position: absolute;
+  bottom: 430px;
+  margin-left: 35px;
+}
+.num2{
+  position: absolute;
+  bottom: 460px;
+  margin-left: 195px;
+  /* background-color: #69B393; */
+}
+.num3{
+  position: absolute;
+  bottom: 401px;
+  margin-left: 260px;
 }
 
 .horizontal-container .sticky-box .horizontal-inner-box .row1 { background-color: #869AEC; }
@@ -1130,34 +1205,72 @@ header{
 
 
 /**** footer ****/
-footer{
-  background-color: #89D4B4;
+.footer-swiper{
+  background-color: #000;
   /* margin-top: 700px; */
   position: relative;
-  height: 70%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-bottom:  1px solid #fff;
 }
 
 
-.swiper2 .swiper {
+.swiper2{
   /* height: 100%; */
+  width: 500px;
+  min-width: 500px;
+  height: 450px;
+  /* background-color: #C7273F; */
 }
 
 .swiper2 .swiper-slide {
-  /* text-align: center; */
-  /* font-size: 18px; */
-  background: #fff;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  display: flex; 
+
 }
 
 .swiper2 .swiper-slide img {
   display: block;
-  width: 30%;
-  /* height: 100%; */
+  width: 80%;
 }
-.swiper-pagination2{
-  /* position: relative; */
-  /* z-index: 999; */
-  background-color: #C7273F;
+
+.footer{
+  /* background-color: #F69B31; */
+  text-align: center;
+  width: 400px;
+  margin-left: 400px;
+  margin-top: 160px;
+  height: 200px;
+  color: #fff;
+}
+.footer h3{
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+}
+
+footer{
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+}
+footer ul{
+  padding-left: 300px;
+}
+footer ul li:nth-child(1){
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+}
+footer a{
+  position: absolute;
+  right: 350px;
+  bottom: 34px;
+  border: 1px solid #fff;
+  padding: 15px 40px;
+  border-radius: 50px;
+}
+footer a:hover{
+  background-color: #fff;
+  color: #000;
 }
