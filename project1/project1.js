@@ -181,6 +181,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var swiper = new Swiper('.mySwiper', {
     // Swiper 옵션
     loop: true,
+    // slidesPerView: 1.05,
+    // spaceBetween: 20,
+    // centeredSlides: true,
     pagination: {
       el: '.swiper-pagination',
     },
@@ -253,7 +256,7 @@ jQuery(function($) {
 
 
 
-
+// 숫자움직임
 document.addEventListener('DOMContentLoaded', function() {
   function animateValue(element, start, end, duration) {
     let startTimestamp = null;

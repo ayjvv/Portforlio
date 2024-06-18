@@ -206,9 +206,9 @@
 }
 
 .project-slide h3 {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1.5rem, 3vw, 3.5rem);
   position: absolute;
-  top: 12%;
+  top: 10%;
   left: 13%;
 }
 
@@ -248,7 +248,7 @@
 .project-txt ul li:first-child {
   font-family: var(--font-m-ko);
   font-size: 1.3rem;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
 }
 
 /* 숫자 컬러 */
@@ -273,10 +273,10 @@
 }
 
 .project-txt h2 {
-  font-size: clamp(2.5rem, 3vw, 4rem);
+  font-size: clamp(2.5rem, 3.5vw, 5.2rem);
   font-weight: 400;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom:55px;
   padding-bottom: 30px;
 }
 
@@ -291,11 +291,12 @@ swiper-slide {
 
 .project-btn {
   border: 1.5px solid #222;
-  padding: 10px;
+  padding: 10px 45px 10px 45px;
   border-radius: 50px;
   margin: 5px;
   font-family: var(--font-m-ko);
   font-weight: 400;
+  font-size: 1.3rem;
 }
 
 /* 버튼 호버 컬러 */
