@@ -154,9 +154,8 @@ document.querySelector('.menu-btn3').addEventListener('click', function() {
 
 
 
-//line들 움직이기
+//line 움직이기
 window.addEventListener('scroll', function() {
-  // .line-bg 요소의 위치와 높이 가져오기
   var lineBg = document.querySelector('.line-bg');
   var rect = lineBg.getBoundingClientRect();
 

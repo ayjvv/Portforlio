@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>weenybeeny-detail</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+
+  <!-- open graph -->
+
+  <!-- reset -->
+  <link rel="stylesheet" href="../assets/styles/reset.css">
+
+  <!-- style -->
+  <link rel="stylesheet" href="./weenybeeny-detail.css">
+
+
+
+  <!-- jQuery -->
+  <script src="../assets/js/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <!----- header ----->
+  <header>
+    <nav class="menu-page">
+
+      <img src="../assets/images/red-logo.png" alt="메뉴로고" class="menu-logo">
+
+      <ul class="side-menu">
+        <li>Overview</li>
+        <li>Design</li>
+        <li>Problems</li>
+        <li>Review</li>
+      </ul>
+
+      <a href="#"><img src="../assets/images/githube-logo.png" alt="깃허브 로고" class="menu-github"></a>
+      <a href="#"><img src="../assets/images/mail-logo.png" alt="메일 로고" class="menu-mail"></a>
+
+      <div class="menu-btn">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </div>
+
+    </nav>
+  </header>
+
+  <!----- cover ----->
+  <section class="cover">
+    <div class="circle">
+      <img src="./images/weenybeeny.gif" alt="위니비니 페이지" class="weenybeeny">
+    </div>
+    <div class="cover-txt">
+      <h2><img src="./images/pink-logo.png" alt="핑크로고">Weeny Beeny</h2>
+      <ul>
+        <li><img src="./images/ul-pink.png" alt="핑크원" class="pink-circle">리디자인 & 퍼블리싱</li>
+        <li><img src="./images/ul-pink.png" alt="핑크원" class="pink-circle">2024.06.10 ~ 2024.06.17</li>
+      </ul>
+    </div>
+  </section>
+
+  <!----- overview ----->
+  <section class="overview">
+    <h3>Overview</h3>
+    <div class="overview-img">
+      <img src="./images/red-candy.png" alt="레드캔디" class="red-candy">
+      <img src="./images/logo.png" alt="위니비니로고">
+      <div class="overview-txt">
+        <p><img src="./images/ul-pink.png" alt="핑크원" class="pink-circle">위니비니가 가지고 있는 귀엽고 컬러풀한 느낌을 살려 디자인하는 것이 목표였습니다.
+        </p>
+        <p>또한 아기자기한 컨텐츠에 anmaiton과 JavaScript를 활용하여 정적인 페이지가 아닌<br>활동적이고 유쾌한 페이지를 만들고자 하였습니다.</p>
+      </div>
+    </div>
+
+    <ul class="overview-point">
+      <li>컬러풀한 디자인</li>
+      <li>활동적인 움직임</li>
+      <li>적절한 anmaition활용</li>
+    </ul>
+  </section>
+
+  <!----- design ----->
+  <section class="design">
+    <h3>Design</h3>
+    <div class="main-color">
+      <p>Main Color</p>
+      <ul>
+        <li><img src="./images/color-pink.png" alt="메인컬러"></li>
+        <li><img src="./images/color-blue.png" alt="메인컬러"></li>
+        <li><img src="./images/color-yellow.png" alt="메인컬러"></li>
+      </ul>
+      <p>위니비니의 통통튀는 매력과 귀여움이 돋보일 수 있는 컬러를 사용하였습니다.</p>
+    </div>
+
+    <div class="sub-color">
+      <p>Sub Color</p>
+      <ul>
+        <li><img src="./images/color-purple.png" alt="서브컬러"></li>
+        <li><img src="./images/color-green.png" alt="서브컬러"></li>
+        <li><img src="./images/color-orange.png" alt="서브컬러"></li>
+        <p>너무 강렬해 보이지 않도록 채도가 많이 높지 않되 다양한 컬러를 사용하여 컬러풀함을 표현하였습니다.</p>
+      </ul>
+    </div>
+
+    <div class="font">
+      <ul>
+        <li><img src="./images/font1.png" alt="Genty Demo"></li>
+        <li>Genty Demo (영문)</li>
+        <li><img src="./images/font2.png" alt="Bebas Neue"></li>
+        <li>Bebas Neue (영문)</li>
+        <li><img src="./images/font3.png" alt="Spoqa Han Sans Neo"></li>
+        <li>Spoqa Han Sans Neo (국문)</li>
+      </ul>
+      <p>영문은 위니비니의 매력을 보여줄 수 있는 Genty Demo를 사용하고<br>
+        국문은 가독성이 좋은 Spoqa Han Sans Neo를 사용하였습니다.</p>
+    </div>
+  </section>
+
+  <!----- problems ----->
+  <section class="problems">
+    <h3>Problems<br>
+      & Solution</h3>
+
+    <div class="problems-txt1">
+      <ul>
+        <li><img src="./images/ul-pink.png" alt="핑크원" class="pink-circle">img-box 섹션의 이미지가 왜 정렬이 안될까?</li>
+        <li>position으로 한자리에 모아져있던 이미지가
+          일렬로 나열되도록 시도하였으나 실행되지 않았습니다.</li>
+        <li><span>flex로 이미지를 먼저 정열하고</span> transform: translateX();를 적용시켜
+          이미지를 한자리에 모은 뒤 플러스 버튼을 클릭했을 때 <span>transform: none;</span>으로
+          이미지가 정열 되도록 하였습니다.</li>
+      </ul>
+
+      <img src="./images/flex.gif" alt="정렬jpg">
+    </div>
+
+    <div class="problems-txt2">
+      <ul>
+        <li><img src="./images/ul-pink.png" alt="핑크원" class="pink-circle">line-bg 섹션의 Scroll 이벤트, 여러번 볼 순 없을까?</li>
+        <li>line-bg 영역 내에 스크롤이 왔을 시 라인 3개가 움직이는 이벤트를 적용하였으나
+          스크롤이 영역 밖으로 갔다가 다시 돌아오면 이벤트가 다시 발생하지 않았습니다.
+        </li>
+        <li>JavaScript에 <span>조건문</span>을 추가하여
+          if - <span>영역 내에 있을 때</span>는 class가 적용되고 else - <span>영역 밖에 있을 때</span> class가 적용되지 않게 코드를 변경하였더니 해결되었습니다.
+        </li>
+      </ul>
+
+      <img src="./images/code.png" alt="코드사진">
+    </div>
+  </section>
+
+  <!----- review ----->
+  <section class="review">
+    <h3>Review</h3>
+    <p>평소 선호하던 심플한 디자인과는 달리 눈에 띄고 컬러풀한 디자인을 시도하고 싶었습니다.
+      그러다 보니 단순함과 과함의 경계선을 오고 가며 디자인 작업을 하는 것이 쉽지만은 않았던 것 같습니다.
+      하지만 한 가지 스타일에 갇히지 않고 새로운 디자인을 완성해 나가며 디자인에 대한 재미를 찾을 수 있었습니다.
+    </p>
+    <p>또한, 여러 콘텐츠들로 디자인하는 만큼 많은 이벤트 효과도 사용하게 되었는데,
+      제가 의도했던 이벤트를 사용자의 입장에서는 제대로 인식하지 못할 수도 있다는 점에서 어려움을 겪기도 하였습니다.
+      그로 인해 웹 사이트를 제작할 때는 <strong>한 명의 시선이 아닌 여러 명의 시선을 생각하고 고려하여야 한다는 것</strong>을 깨달을 수 있는 좋은 경험을 쌓을 수 있었습니다.</p>
+  </section>
+
+  <!----- footer ----->
+  <footer>
+    <div>
+      <a href="./weenybeeny.html"><img src="./images/red-candy.png" alt="레드캔디">Weeny Beeny 보러가기</a>
+    </div>
+
+    <a href="#"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M4.293 15.707a1 1 0 0 0 1.414 0L12 9.414l6.293 6.293a1 1 0 0 0 1.414-1.414l-7-7a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 0 1.414Z"
+          fill="#212121" />
+      </svg></a>
+  </footer>
+
+
+  <script src="./weenybeeny-detail.js"></script>
+</body>

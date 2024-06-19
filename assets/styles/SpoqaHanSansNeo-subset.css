@@ -26,19 +26,19 @@
 	src: local('SpoqaHanSansNeo-Regular'), url(../fonts/SpoqaHanSansNeo-Regular.woff2) format('woff2');
 }
 
-@font-face {
+/* @font-face {
 	font-family: 'SpoqaHanSansNeo';
 	font-weight: 500;
 	font-display: swap;
 	src: local('SpoqaHanSansNeo Medium'), url(../fonts/SpoqaHanSansNeo-Medium.subset.woff2) format('woff2');
-}
+} */
 
-@font-face {
+/* @font-face {
 	font-family: 'SpoqaHanSansNeo';
 	font-weight: 400;
 	font-display: swap;
 	src: local('SpoqaHanSansNeo Regular'), url(../fonts/SpoqaHanSansNeo-Regular.subset.woff2) format('woff2');
-}
+} */
 
 @font-face {
 	font-family: 'SpoqaHanSansNeo';
