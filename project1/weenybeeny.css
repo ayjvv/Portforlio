@@ -1269,11 +1269,13 @@ footer a{
   right: 350px;
   bottom: 34px;
   border: 1px solid #fff;
-  padding: 15px 40px;
+  padding: 16px 60px;
   border-radius: 50px;
+  font-weight: 800;
 }
 footer a:hover{
   background-color: #fff;
   color: #000;
+  font-weight: 900;
 }
 

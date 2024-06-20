@@ -4,10 +4,10 @@
 /**** fonts ****/
 
 /* 'Pretendard' ,sans-serif */
-@import url(./assets/styles/pretendard-subset.css);
+@import url(../assets/styles/pretendard-subset.css);
 
 /* 'Tartuffo_Trial' */
-@import url(./assets/styles/tartuffo-subset.css);
+@import url(../assets/styles/tartuffo-subset.css);
 
 
 :root {
@@ -24,6 +24,9 @@
   --color-point-pink: #FFD8D8;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 /* body */
 body {
@@ -47,8 +50,8 @@ body {
   background-color: var(--color-point-pink);
   width: 23%;
   min-width: 300px;
-  height: 55vh;
-  min-height: 500px;
+  height: 65vh;
+  min-height: 600px;
   border-radius: 0 0 30px 0;
   position: fixed;
   left: -500px;
@@ -186,16 +189,28 @@ body {
 
 
 /***** overview *****/
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .overview{
   margin-top: 150px;
   position: relative;
-  height: 80vh;
+  height: 65vh;
 }
 .overview .overview-img{
   text-align: center;
-  margin-top: 100px;
+  padding-top: 115px;
 }
-.overview h3{
+.overview h3, .design h3, .problems h3, .publisihing h3, .review h3{
   font-size: clamp(1rem, 5vw, 3rem);
   font-family: var(--font-m-en);
   color: var(--color-point-red);
@@ -212,7 +227,20 @@ body {
   top: 4%;
 }
 .overview .red-candy{
-  width: 3%;
+  width: 2.5%;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) ;
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) ;
+  }
 }
 .overview .overview-txt{
   position: absolute;
@@ -221,22 +249,270 @@ body {
 }
 .overview .overview-txt p{
   text-align: left; 
+  font-size: 1.2rem;
 }
 
 .overview .overview-txt p:nth-child(1){
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .overview .overview-txt p:nth-child(2){
-  margin-top: 18px;
+  margin-top: 15px;
+  margin-left: 25px;
+  line-height: 1.4;
 }
 .overview-point{
-  margin-top: 150px;
+  margin-top: 187px;
   display: flex;
   position: absolute;
   /* bottom: 10%; */
   right: 50%;
   transform: translateX(50%);
 }
+.overview-point li{
+  margin-right: 40px;
+  background-color: #FF7491;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 200px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 13px 15px;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/***** design *****/
+.design{
+  position: relative;
+}
+.design h3::after{
+  content: "";
+  width: 75%;
+  height: 1px;
+  background-color: var(--color-point-red);
+  position: absolute;
+  right: 5%;
+  top: 2%;
+}
+.main-color p:nth-child(1){
+  margin-top: 120px;
+  margin-left: 450px;
+  font-size: 1.2rem;
+}
+.main-color p:last-child{
+  text-align: center;
+  margin-top: 35px;
+  margin-right: 17px;
+  font-size: 1.2rem;
+}
+.main-color ul, .sub-color ul, .font ul{
+  display: flex;
+  justify-content: center;
+}
+.main-color ul li, .sub-color ul li{
+  margin-right: 20px;
+}
+.sub-color p:nth-child(1){
+  font-size: 1.2rem;
+  margin-left: 450px;
+  margin-top: 90px;
+}
+.sub-color p:last-child{
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 35px;
+  margin-left: 180px;
+}
+
+.font ul{
+  flex-direction: column;
+  align-items: center;
+}
+.font p:first-child{
+  font-size: 1.2rem;
+  margin-left: 450px;
+  margin-top: 190px;
+}
+.font ul li:nth-child(even){
+  color: #808080;
+  margin-bottom: 33px;
+  margin-top: 8px;
+}
+.font p:last-child{
+  text-align: left;
+  margin: 20px auto;
+  width: 506px;
+  font-size: 1.2rem;
+  margin-bottom: 120px;
+  line-height: 1.4;
+}
+
+/***** publisihing *****/
+.publisihing{
+  position: relative;
+  height: 35vh;
+}
+.publisihing h3::after{
+  content: "";
+  width: 75%;
+  height: 1px;
+  background-color: var(--color-point-red);
+  position: absolute;
+  right: 5%;
+  top: 30px;
+}
+.publisihing ul{
+  display: grid;
+  justify-content: center;
+  transform: translateY(50%);
+  font-size: 1.2rem;
+}
+.publisihing ul li{
+  margin: 8px;
+}
+
+
+/***** problems *****/
+.problems{
+  position: relative;
+}
+.problems h3::after{
+  content: "";
+  width: 75%;
+  height: 1px;
+  background-color: var(--color-point-red);
+  position: absolute;
+  right: 5%;
+}
+.problems ul{
+  margin-top: 100px;
+  font-size: 1.2rem;
+  display: grid;
+  justify-content: center;
+  line-height: 1.5;
+}
+.problems ul li{
+  padding-left: 23px;
+}
+.problems ul li span{
+  font-weight: 500;
+  background-color: rgb(255, 116, 145 , 0.4);
+}
+.problems ul li:first-child{
+  margin-bottom: 26px;
+  font-weight: 600;
+  padding-left: 0;
+  font-size: 1.3rem;
+}
+.problems ul li:nth-child(3){
+  margin-top: 20px;
+}
+.problems .flex-img{
+  border-radius: 25px;
+  border: 3px solid #000;
+}
+.img-center{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.problems-txt2 ul li:first-child{
+  margin-top: 70px;
+}
+.code-img{
+  width: 42%;
+  margin-bottom: 150px;
+}
+
+
+/***** review *****/
+.review{
+  position: relative;
+}
+.review h3::after{
+  content: "";
+  width: 75%;
+  height: 1px;
+  background-color: var(--color-point-red);
+  position: absolute;
+  right: 5%;
+  top: 30px;
+}
+.review div{
+  font-size: 1.2rem;
+  line-height: 1.4;
+  display: grid;
+  justify-content: center;
+  margin-top: 110px;
+  margin-bottom: 120px;
+}
+.review p:last-child{
+  margin-top: 2px;
+}
+
+
+/***** footer *****/
+footer{
+  /* padding-bottom: 25px; */
+  position: relative;
+}
+footer div:nth-child(1){
+ text-align: center;
+ font-size: 1.5rem;
+  padding: 65px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 90%;
+  margin: 0 auto 30px;
+}
+footer a img{
+  width: 2%;
+  margin-right: 10px;
+  animation: spin 4s linear infinite;
+}
+footer .site-btn{
+  border: #000 solid 2px;
+  border-radius: 50px;
+  padding: 20px 60px; 
+}
+footer .site-btn:hover{
+  background-color: #FF7491;
+  border: 2px solid #fff;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+footer a svg{
+  margin-top: 6px;
+}
+footer a:nth-child(2){
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height:50px;
+  background-color: #FF7491;
+  /* position: absolute; */
+  /* right: 100px; */
+  text-align: center;
+}
+footer .go-to-up{
+  display: flex;
+  justify-content: end;
+  margin-right: 180px;
+}
+footer .go-to-up a{
+  display: block;
+  position: absolute;
+  bottom: 80px; 
+  border-radius: 50%;
+  width: 50px;
+  height:50px;
+  background-color: #FF7491;
+  text-align: center;
+}
+footer .go-to-up a:hover{
+  bottom: 85px;
+}
+
 
 
 @media (max-width : 900px){

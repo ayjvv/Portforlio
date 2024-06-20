@@ -15,8 +15,8 @@
   background-color: var(--color-point-pink);
   width: 23%;
   min-width: 300px;
-  height: 55vh;
-  min-height: 500px;
+  height: 65vh;
+  min-height: 600px;
   border-radius: 0 0 30px 0;
   position: fixed;
   left: -500px;
@@ -189,6 +189,11 @@
 
 
 /***** project *****/
+.project-img3{
+  border-radius: 25px;
+  border: 2px solid #FF6E7A;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .project p {
   text-align: center;
   padding-top: 300px;
@@ -290,7 +295,7 @@ swiper-slide {
 }
 
 .project-btn {
-  border: 1.5px solid #222;
+  border: 2px solid #222;
   padding: 10px 45px 10px 45px;
   border-radius: 50px;
   margin: 5px;
@@ -300,29 +305,33 @@ swiper-slide {
 }
 
 /* 버튼 호버 컬러 */
+
 #project-btn1:hover {
   background-color: var(--color-point-purple);
   color: #fff;
-}
-
-#project-btn2:hover {
-  background-color: var(--color-point-purple);
-  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .project-btn2:hover {
   background-color: var(--color-point-orange);
   color: #fff;
+  border: 2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .project-btn3:hover {
   background-color: var(--color-point-green);
   color: #fff;
+  border: 2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .project-btn4:hover {
   background-color: var(--color-point-yellow);
   color: #fff;
+  border: 2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 

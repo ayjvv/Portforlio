@@ -63,22 +63,22 @@ $(document).ready(function() {
 
 
 
- /*** 메뉴 사라짐 ***/
- let lastScrollTop = 0;
+//  /*** 메뉴 사라짐 ***/
+//  let lastScrollTop = 0;
 
- $(window).on('scroll', () => {
-   let currentScrollTop = $(window).scrollTop();
+//  $(window).on('scroll', () => {
+//    let currentScrollTop = $(window).scrollTop();
    
-   // 현재 스크롤 위치와 이전 스크롤 위치를 비교
-   if (currentScrollTop > lastScrollTop) {
-     $('.menu-btn').addClass('none on');
-   } else {
-     $('.menu-btn').removeClass('none on');
-   }
+//    // 현재 스크롤 위치와 이전 스크롤 위치를 비교
+//    if (currentScrollTop > lastScrollTop) {
+//      $('.menu-btn').addClass('none on');
+//    } else {
+//      $('.menu-btn').removeClass('none on');
+//    }
    
-   // 이전 스크롤 위치를 현재 스크롤 위치로 업데이트
-   lastScrollTop = currentScrollTop;
- });
+//    // 이전 스크롤 위치를 현재 스크롤 위치로 업데이트
+//    lastScrollTop = currentScrollTop;
+//  });
 
 
 
