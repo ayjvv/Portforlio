@@ -180,3 +180,15 @@ header p{
 .music-swiper{
   display: flex;
 }
+
+/***** ult-wear *****/
+.ult-wear{
+  margin-top: 200px;
+}
+.ult-wear h3{
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.left{
+  display: flex;
+}
