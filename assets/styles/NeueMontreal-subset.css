@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'NeueMontreal';
+	font-weight: 900;
+	font-display: swap;
+	src: local('NeueMontreal-Bold'), url(../fonts/NeueMontreal-Bold.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'NeueMontreal';
+	font-weight: 800;
+	font-display: swap;
+	src: local('NeueMontreal-Medium'), url(../fonts/NeueMontreal-Medium.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'NeueMontreal';
+	font-weight: 700;
+	font-display: swap;
+	src: local('NeueMontreal-Regular'), url(../fonts/NeueMontreal-Regular.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'NeueMontreal';
+	font-weight: 600;
+	font-display: swap;
+	src: local('NeueMontreal-Light'), url(../fonts/NeueMontreal-Light.woff2) format('woff2');
+}
+
