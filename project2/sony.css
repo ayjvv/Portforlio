@@ -88,11 +88,60 @@ header p{
   bottom: 0;
   font-weight: 900;
 }
+.animated-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideUp 1s forwards;
+}
+
+.animated-text span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.animated-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.animated-text span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.animated-text span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.animated-text span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.animated-text span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.animated-text span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.animated-text span:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+@keyframes slideUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.txt-w{
+  margin-left: 50px;
+}
+
 .cover-bg {
   height: 100%;
   background: url(./images/cover-img.png) no-repeat 80%;
   background-size: cover;
-  animation: grow 3s ease-out forwards;
+  animation: grow 1.5s ease-out forwards;
   transform: scale(0.3); /* 이미지 크기를 처음에 작게 설정 */
 }
 
@@ -105,7 +154,10 @@ header p{
   }
 }
 
+
 /***** main *****/
+
+
 .main{
   height: 100vh;
 }
@@ -222,6 +274,9 @@ header p{
   /* height: 100%; */
   object-fit: cover;
   margin-bottom: 20px;
+}
+.music figure{
+  cursor: grab;
 }
 figcaption{
   margin-left: 5px;
@@ -386,7 +441,9 @@ figcaption{
   margin-left: 80px;
   cursor: pointer;
 }
-
+.mySwiper3 .swiper-slide{
+  cursor: grab;
+}
 .mySwiper3 .swiper-slide p{
   width: 550px;
   font-size: 1.2rem;

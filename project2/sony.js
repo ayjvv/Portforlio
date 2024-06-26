@@ -65,3 +65,32 @@ var swiper = new Swiper(".mySwiper3", {
       prevEl: ".swiper-button-prev1",
   },
 });
+
+
+// .rolled-over-txt
+gsap.utils.toArray('.rolled-over-txt').forEach((txt) => {
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: txt,
+      start: '100% 100%',
+      end: '100% 100%',
+      scrub: 1
+    }
+  }).fromTo(
+    txt,
+    {
+      y: 100,
+      opacity: 0
+    },
+    {
+      y: 0,
+      opacity: 1,
+      ease: 'none',
+      duration: 5
+    }
+  );
+});
+
+
+
+
