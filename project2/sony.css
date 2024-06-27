@@ -177,6 +177,7 @@ header p{
 }
 .main-headphone{
   width: 100%;
+  min-width: 250px;
   padding-top: 135px;
   /* min-width: 300px; */
 }
@@ -192,7 +193,7 @@ header p{
   margin-right: 25px;
 }
 .main-txt a img{
-  width: 4%;
+  width: 5px;
   min-width: 21px;
 }
 .main-txt .show{
@@ -298,7 +299,7 @@ figcaption{
   font-weight: 500;
   margin-bottom: 10px;
 }
-.ult-container{
+.ult-wear .ult-container{
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: space-evenly;
@@ -308,7 +309,7 @@ figcaption{
   grid-column: 2;
 }
 .ult-logo{
-  width: 70%;
+  width: 60%;
 }
 .ult-item{
   font-size: clamp(1rem, 6vw, 2rem);
@@ -385,7 +386,7 @@ figcaption{
   font-size: 1rem;
 }
 .core-txt .video-btn img{
-  width: 5%;
+  width: 20px;
   margin-top: 2px;
 }
 .core-txt .video-btn span{

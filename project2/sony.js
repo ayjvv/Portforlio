@@ -39,16 +39,19 @@ var swiper = new Swiper(".mySwiper", {
     500: {
       slidesPerView: 1,
     },
-    700:{
-      slidesPerView: 2.3
+    650:{
+      slidesPerView: 1.5,
     },
-    1200:{
+    900:{
+      slidesPerView: 2
+    },
+    1250:{
       slidesPerView: 3
     },
-    1400:{
+    1650:{
       slidesPerView: 3.5
     },
-    1600:{
+    1700:{
       slidesPerView: 4.2
     }
   }
@@ -96,7 +99,10 @@ var swiper = new Swiper(".mySwiper3", {
       slidesPerView: 1,
       spaceBetween: 100, // 기본 설정 유지
     },
-    1200:{
+    1270:{
+      slidesPerView: 2
+    },
+    1600:{
       slidesPerView: 2.5
     }
   }
