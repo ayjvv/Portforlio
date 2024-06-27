@@ -3,8 +3,23 @@
 
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1400px){
  body{
-  /* background-color: antiquewhite; */
+  background-color: thistle;
  }
+.ult-container{
+  display: flex;
+  flex-direction: column;
+}
+.ult-item{
+  position: static;
+}
+.ult-logo{
+  width: 35%;
+}
+}
+@media screen and (max-width: 1200px){
+  body{
+    background-color: blanchedalmond;
+  }
 }

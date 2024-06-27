@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 500px) {
   body {
-    /* background-color: skyblue; */
+    background-color: skyblue;
   }
 
 
@@ -271,32 +271,3 @@
 }
 }
 
-
-/* footer{
-  display: flex;
-  justify-content: center;
-}
-.footer-box{
-  font-size: 1.2rem;
-  font-weight: 800;
-  width: 95%; 
-  border-top: 1px solid #7E7E7E;
-  padding: 45px 250px;
-  display: flex;
-  justify-content: space-between;
-  color: var(--color-point-point);
-}
-.footer-box p{
- display: grid;
- align-items: center;
-}
-
-.footer-box a{
-  border-radius: 50px;
-  border: 1px solid #7E7E7E;
-  padding: 15px 80px;
-}
-.footer-box a:hover{
-  background-color: #fff;
-  color: #000;
-} */

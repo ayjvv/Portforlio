@@ -178,6 +178,7 @@ header p{
 .main-headphone{
   width: 100%;
   padding-top: 135px;
+  /* min-width: 300px; */
 }
 .main-container{
   display: flex;
@@ -308,7 +309,6 @@ figcaption{
 }
 .ult-logo{
   width: 70%;
-  z-index: -9;
 }
 .ult-item{
   font-size: clamp(1rem, 6vw, 2rem);
@@ -316,7 +316,7 @@ figcaption{
   position: absolute;
   top: 40px;
   left: 200px;
-  z-index: 999;
+  z-index: 99;
 }
 .ult-item p{
   font-size: clamp(1rem, 6vw, 2.5rem);
@@ -346,6 +346,7 @@ figcaption{
   position: absolute;
   margin-top: 250px;
   left: 290px;
+  width: 25%;
 }
 .core-txt{
   margin-top: 200px;
@@ -479,9 +480,6 @@ figcaption{
 .mySwiper3 .swiper-slide span img{
   margin-right: 40px;
 }
-
-
-
 
 
 /***** customized *****/
