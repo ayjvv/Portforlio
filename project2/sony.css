@@ -44,6 +44,7 @@ header{
 header .logo{
   margin: 30px;
   width: 13vw;
+  min-width: 120px;
 }
 .menu-btn {
   position: fixed;
@@ -73,6 +74,7 @@ header p{
   padding-top: 15px;
   padding-bottom: 15px;
   font-weight: 700;
+  /* z-index: 999; */
 }
 
 
@@ -82,7 +84,7 @@ header p{
   height: 100vh;
 }
 .cover h2{
-  font-size: clamp(4rem, 10vw, 15rem);
+  font-size: clamp(3.5rem, 10vw, 15rem);
   margin-left: 5%;
   position: absolute;
   bottom: 0;
@@ -156,8 +158,6 @@ header p{
 
 
 /***** main *****/
-
-
 .main{
   height: 100vh;
 }
@@ -192,6 +192,7 @@ header p{
 }
 .main-txt a img{
   width: 4%;
+  min-width: 21px;
 }
 .main-txt .show{
   margin-top: 2px;
@@ -241,14 +242,14 @@ header p{
   padding: 0 40px 0px 40px;
   position: relative;
   /* height: 100vh; */
-  margin-bottom: 250px;
+  margin-bottom: 220px;
 }
 .music-txt{
   display: flex;
   margin-bottom: 50px;
 }
 .music-txt li:first-child{
-  font-size: 4.5rem;
+  font-size: clamp(3.5rem, 6vw, 4.5rem);
   font-weight: 800;
 }
 .music-txt li:last-child{
@@ -288,28 +289,38 @@ figcaption{
 /***** ult-wear *****/
 .ult-wear{
   /* margin-top: 300px; */
+  position: relative;
+  padding-bottom: 80px;
 }
 .ult-wear h3{
-  font-size: clamp(1.5rem, 6vw, 3rem);
+  font-size: clamp(1.5rem, 6vw, 3.5rem);
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .ult-container{
-  /* display: flex; */
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-evenly;
   text-align: center;
 }
+.cloudimage-360{
+  grid-column: 2;
+}
 .ult-logo{
-  /* width: 80%; */
+  width: 70%;
+  z-index: -9;
 }
 .ult-item{
   font-size: clamp(1rem, 6vw, 2rem);
   font-weight: 700;
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  z-index: 999;
 }
-/* .cloudimage-360-inner-box{
-  width: 500px;
-} */
-
+.ult-item p{
+  font-size: clamp(1rem, 6vw, 2.5rem);
+}
 
 
 /***** core *****/
@@ -319,14 +330,17 @@ figcaption{
   height: 100vh;
   position: relative;
 }
-.core h3{
-  font-size: clamp(1.5rem, 6vw, 4rem);
+.core-container h3{
+  font-size: clamp(2.5rem, 6vw, 4rem);
   position: absolute;
   left: 100px;
   font-weight: 800;
   margin-top: 30px;
   margin-bottom: 50px;
   /* margin-right: 800px; */
+}
+.core-txt h3{
+  display: none;
 }
 .core-container img{
   position: absolute;
@@ -341,6 +355,9 @@ figcaption{
 }
 .core-txt span{
   color: #fff;
+}
+.core-txt ul li:first-child{
+  width: 75%;
 }
 .core-txt p{
  width: 450px;
@@ -357,7 +374,7 @@ figcaption{
 .core-txt ul li:last-child{
   margin-bottom: 50px;
 }
-.core-txt a{
+.core-txt .video-btn{
   border: 1px solid var(--color-point-point);
   padding: 15px 5px 15px 20px;
   border-radius: 50px;
@@ -366,11 +383,11 @@ figcaption{
   font-weight: 400;
   font-size: 1rem;
 }
-.core-txt a img{
+.core-txt .video-btn img{
   width: 5%;
   margin-top: 2px;
 }
-.core-txt a span{
+.core-txt .video-btn span{
   background-color: #3C4C54;
   padding: 12px;
   border-radius: 50px;
@@ -380,6 +397,7 @@ figcaption{
 /***** video *****/
 .video{
   padding: 150px 0 150px;
+  background-color: #252829;
 }
 .video .btn{
   display: grid;
@@ -407,6 +425,9 @@ figcaption{
 .swiper-wrapper2 img{
   width: 100%;
 }
+.core-mo{
+  display: none;
+}
 
 /***** connect *****/
 .connect{
@@ -416,19 +437,18 @@ figcaption{
 }
 .connect h3{
   font-weight: 800;
-  font-size: clamp(1.5rem, 6vw, 4rem);
+  font-size: clamp(3rem, 6vw, 4rem);
   text-align: right;
   margin-bottom: 150px;
   position: relative;
 }
 .mySwiper3 .swiper-slide:first-child{
   /* border: none; */
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
 .mySwiper3 .swiper-slide{
   border-left: 1.5px solid #7E7E7E;
-  padding-left: 50px;
-  /* display: grid; */
+  display: grid;
 }
 .connect span:first-child{
   background-color: #3C4C54;
@@ -484,7 +504,7 @@ figcaption{
   margin-bottom: 30px;
 }
 .customized-txt h3{
-  font-size: clamp(1.5rem, 6vw, 3.5rem);
+  font-size: clamp(1.6rem, 6vw, 3.5rem);
   font-weight: 800;
   margin-bottom: 50px;
 }
@@ -517,7 +537,7 @@ figcaption{
   grid-template-columns:  1fr 1fr;
 }
 .footer-txt h3{
-  font-size: clamp(1.5rem, 6vw, 4.5rem);
+  font-size: clamp(2rem, 6vw, 4.5rem);
   font-weight: 800;
   margin-top: 50px;
   margin-bottom: 80px;

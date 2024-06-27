@@ -1,3 +1,6 @@
+
+
+// 텍스트 효과
 window.addEventListener('load', function() {
   const container = document.querySelector('.loop-container');
   const wrapper = document.querySelector('.loop-wrapper');
@@ -21,6 +24,7 @@ window.addEventListener('load', function() {
 });
 
 
+// music 스와이퍼
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4.2,
   spaceBetween: 30,
@@ -28,10 +32,31 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination1",
     clickable: true,
   },
+  breakpoints: {
+    360:{
+      slidesPerView: 1,
+    },
+    500: {
+      slidesPerView: 1,
+    },
+    700:{
+      slidesPerView: 2.3
+    },
+    1200:{
+      slidesPerView: 3
+    },
+    1400:{
+      slidesPerView: 3.5
+    },
+    1600:{
+      slidesPerView: 4.2
+    }
+  }
 });
 
 
 
+//video 스와이퍼
 var swiper = new Swiper(".mySwiper1", {
   effect: "coverflow",
   grabCursor: true,
@@ -51,10 +76,12 @@ var swiper = new Swiper(".mySwiper1", {
 });
 
 
+
+//텍스트 스와이퍼
 var swiper = new Swiper(".mySwiper3", {
-  slidesPerView: 2, // 자동 슬라이드 크기 조정
+  slidesPerView: 2.5, // 자동 슬라이드 크기 조정
   centeredSlides: false, // 가운데 정렬 비활성화
-  spaceBetween: -550,
+  spaceBetween: 0,
   initialSlide: 0, // 첫 번째 슬라이드부터 시작
   pagination: {
       el: ".swiper-pagination",
@@ -64,10 +91,20 @@ var swiper = new Swiper(".mySwiper3", {
       nextEl: ".swiper-button-next1",
       prevEl: ".swiper-button-prev1",
   },
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+      spaceBetween: 100, // 기본 설정 유지
+    },
+    1200:{
+      slidesPerView: 2.5
+    }
+  }
 });
 
 
-// .rolled-over-txt
+
+// 전체 텍스트 움직임
 gsap.utils.toArray('.rolled-over-txt').forEach((txt) => {
   gsap.timeline({
     scrollTrigger: {

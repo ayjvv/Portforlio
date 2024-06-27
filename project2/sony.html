@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>SONY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
   <!-- favicon -->
   <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
@@ -20,11 +21,16 @@
 
   <!-- reset -->
   <link rel="stylesheet" href="../assets/styles/reset.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- style -->
-  <link rel="stylesheet" href="./sony.css">
   <link rel="stylesheet" href="../assets/styles/swiper-bundle1.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./sony.css">
+  <link rel="stylesheet" href="./sony-tablet.css">
+  <link rel="stylesheet" href="./sony-mobile.css">
+
+  
 
   <!-- jQuery -->
   <script src="../assets/js/jquery-3.7.1.min.js"></script>
@@ -56,8 +62,9 @@
     <div class="cover-bg">
     </div>
     <h2 class="animated-text">
-      <span>U</span><span>L</span><span>T</span><span> </span><span class="txt-w">W</span><span>E</span><span>A</span><span>R</span>
-  </h2>
+      <span>U</span><span>L</span><span>T</span><span> </span><span
+        class="txt-w">W</span><span>E</span><span>A</span><span>R</span>
+    </h2>
   </section>
 
   <!----- main ----->
@@ -71,8 +78,10 @@
             생생한 사운드가 전달됩니다. 360 Reality Audio로 이제까지 접해보지 못한
             새로운 차원의 몰입 감과 생생한 사운드를 즐길 수 있습니다.</li>
         </ul>
+        <div class="main-btn">
         <a href="#">슬라이드쇼 보기<span><img src="./images/slideshow.png" alt="슬라이드쇼" class="show"></span></a>
-        <a href="#">비디오 재생<span><img src="./images/play-btn.png" alt="플레이버튼" class="play"></span></a>
+        <a href="#" class="play-btn">비디오 재생<span><img src="./images/play-btn.png" alt="플레이버튼" class="play"></span></a>
+      </div>
       </div>
 
       <div><img src="./images/main-headphone.png" alt="메인 검정해드폰" class="main-headphone"></div>
@@ -82,13 +91,13 @@
       <div class="loop-wrapper">
         <div class="item"><img src="./images/txt-slide1.png" alt="음향">강력한 사운드&nbsp;</div>
         <div class="item"><img src="./images/txt-slide2.png" alt="사운드">사운드 미세 조정&nbsp;</div>
-        <div class="item"><img src="./images/txt-slide3.png" alt="배터리">최대30시간 배터리&nbsp;</div>
+        <div class="item"><img src="./images/txt-slide3.png" alt="배터리" class="percent">최대30시간 배터리&nbsp;</div>
         <div class="item"><img src="./images/txt-slide4.png" alt="음악">사운드 복원&nbsp;</div>
         <div class="item"><img src="./images/txt-slide5.png" alt="디자인">편안한 디자인&nbsp;</div>
         <div class="item"><img src="./images/txt-slide6.png" alt="블루투스">일상적인용도&nbsp;</div>
         <div class="item"><img src="./images/txt-slide1.png" alt="음향">강력한 사운드&nbsp;</div>
         <div class="item"><img src="./images/txt-slide2.png" alt="사운드">사운드 미세 조정&nbsp;</div>
-        <div class="item"><img src="./images/txt-slide3.png" alt="배터리">최대30시간 배터리&nbsp;</div>
+        <div class="item"><img src="./images/txt-slide3.png" alt="배터리" class="percent">최대30시간 배터리&nbsp;</div>
         <div class="item"><img src="./images/txt-slide4.png" alt="음악">사운드 복원&nbsp;</div>
         <div class="item"><img src="./images/txt-slide5.png" alt="디자인">편안한 디자인&nbsp;</div>
         <div class="item"><img src="./images/txt-slide6.png" alt="블루투스">일상적인용도&nbsp;</div>
@@ -158,13 +167,13 @@
   </section>
 
 
-  <!----- music ----->
+  <!----- ult-wear ----->
   <section class="ult-wear">
     <div class="ult-container">
       <div class="ult-item">
-        <h3>ULT WEAR 헤드폰 살펴보기</h3>
-        <img src="./images/UlT_logo.png" alt="ult로고" class="ult-logo">
-        <p>360 Reality Audio</p>
+        <h3 class="rolled-over-txt">ULT WEAR 헤드폰 살펴보기</h3>
+        <img src="./images/ULT-logo.jpg" alt="ult로고" class="ult-logo rolled-over-txt">
+        <p class="rolled-over-txt">360 Reality Audio</p>
       </div>
       <div class="cloudimage-360" data-folder="./images/" data-filename-x="360-{index}.jpg" data-amount-x="12"
         data-magnifier="2" data-ratio="2"></div>
@@ -177,14 +186,20 @@
       <h3 class="rolled-over-txt">CORE<br>TECHNOLOGY</h3>
       <img src="./images/white-headphone.png" alt="화이트 헤드폰">
     </div>
+
+    <div class="core-mo">
+      <a href="#" class="video-mo">비디오 재생<span><img src="./images/play-btn.png" alt="플레이버튼"></span></a>
+    </div>
+
     <div class="core-txt">
+      <h3 class="rolled-over-txt">CORE<br>TECHNOLOGY</h3>
       <p class="rolled-over-txt">비행기 소음부터 사람들의 음성까지 <span>멀티 마이크<br>
           노이즈 캔슬링 기능이 탑재</span> 또한<br>
         <span>Auto NC Optimizer</span>로 노이즈 캔슬링을
-        자동으로<br> 최적화합니다.
+        자동으로 최적화합니다.
       </p>
       <ul>
-        <li class="rolled-over-txt"><span>마이크 8개를 제어하는</span> 프로세서 2개를 갖춘<br>
+        <li class="rolled-over-txt"><span>마이크 8개를 제어하는</span> 프로세서 2개를 갖춘
           Auto NC Optimizer</li>
         <li class="rolled-over-txt">특수 설계된 드라이버 유닛이 장착된<br>
           <span>WH-1000XM5</span> 헤드폰
@@ -192,13 +207,14 @@
         <li class="rolled-over-txt">업계 최고의 <span>노이즈 캔슬링</span>기능이 내장</li>
         <li class="rolled-over-txt">거슬림 없는 청취 환경과 <span></span>통화 선명도</span></li>
       </ul>
-      <a href="#">비디오 재생<span><img src="./images/play-btn.png" alt="플레이버튼"></span></a>
+
+      <a href="#" class="video-btn">비디오 재생<span><img src="./images/play-btn.png" alt="플레이버튼"></span></a>
+
     </div>
   </section>
 
+
   <!----- video ----->
-
-
   <section class="video">
     <div class="swiper mySwiper1">
       <div class="swiper-wrapper swiper-wrapper2">
@@ -224,35 +240,39 @@
   <section class="connect">
 
     <div class="arrow">
-    <div class="swiper-button-prev1"><span><img src="./images/arrow2.png" alt="화살표"></span></div>
+      <div class="swiper-button-prev1"><span><img src="./images/arrow2.png" alt="화살표"></span></div>
 
-    <div class="swiper-button-next1"><span><img src="./images/arrow.png" alt="화살표"></span></div>
-  </div>
-    
+      <div class="swiper-button-next1"><span><img src="./images/arrow.png" alt="화살표"></span></div>
+    </div>
+
     <h3 class="rolled-over-txt">HEADPHONES CONNECT</h3>
 
     <div #swiperRef="" class="swiper mySwiper3">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><p>WH-1000XM5 헤드폰은 직관적인 터치 제어 설정이 특징입니다. 예를 들면 왼쪽 버튼을 눌러 노이즈 캔슬링에서 주변 소리 모드로 전환하거나 오른쪽
-          터치패널을 사용하여 음악 재생 또는 일시 정지,
-          트랙 건너뛰기, 볼륨 변경 등을 할 수 있습니다.</p>
+        <div class="swiper-slide">
+          <p>WH-1000XM5 헤드폰은 직관적인 터치 제어 설정이 특징입니다. 예를 들면 왼쪽 버튼을 눌러 노이즈 캔슬링에서 주변 소리 모드로 전환하거나 오른쪽
+            터치패널을 사용하여 음악 재생 또는 일시 정지,
+            트랙 건너뛰기, 볼륨 변경 등을 할 수 있습니다.</p>
           <span><img src="./images/connnect-1.png" alt="커넥트1">Easy operation</span>
         </div>
-        <div class="swiper-slide"><p>30시간의 긴 배터리 수명 덕분에 장기 여행 시에도 사용할 수 있는 충분한 전원이 확보됩니다. 급하게 충전해야 하는 경우 USB-PD 호환 AC
-          어댑터(옵션)로 3분만 충전해도 3시간 동안 사용할
-          수 있는 양이 충전됩니다.</p>
+        <div class="swiper-slide">
+          <p>30시간의 긴 배터리 수명 덕분에 장기 여행 시에도 사용할 수 있는 충분한 전원이 확보됩니다. 급하게 충전해야 하는 경우 USB-PD 호환 AC
+            어댑터(옵션)로 3분만 충전해도 3시간 동안 사용할
+            수 있는 양이 충전됩니다.</p>
           <span><img src="./images/connnect-2.png" alt="커넥트2">Generous power<br>
             and fast charging</span>
         </div>
-        <div class="swiper-slide"><p>소프트 매칭 케이스에 담아 이어폰을 간편하게 휴대하세요.<br> 이어폰을 꺼낸 후 케이스는 접어서 가방에 간편하게 보관하세요.</p>
+        <div class="swiper-slide">
+          <p>소프트 매칭 케이스에 담아 이어폰을 간편하게 휴대하세요.<br> 이어폰을 꺼낸 후 케이스는 접어서 가방에 간편하게 보관하세요.</p>
           <span><img src="./images/connnect-3.png" alt="커넥트3">A space-saving<br>
             folding case</span>
         </div>
-        <div class="swiper-slide"><p>플라스틱이 없는 WH-1000XM5 포장재는
-          저독성 디자인 철학과 함께 사회적 책임을
-          실현하고자 제조되었습니다. 제품 상자는<br>
-          소니를 위해 특별히 개발된, 지속 가능한
-          재활용 소재를 사용하여 생산됩니다.</p>
+        <div class="swiper-slide">
+          <p>플라스틱이 없는 WH-1000XM5 포장재는
+            저독성 디자인 철학과 함께 사회적 책임을
+            실현하고자 제조되었습니다. 제품 상자는<br>
+            소니를 위해 특별히 개발된, 지속 가능한
+            재활용 소재를 사용하여 생산됩니다.</p>
           <span><img src="./images/connnect-4.png" alt="커넥트4">Packaging for a<br>
             Sustainable Earth</span>
         </div>
@@ -277,7 +297,7 @@
   </section>
 
 
-  <!----- footer ----->
+  <!----- <footer> ----->
   <section class="footer">
     <div class="footer-txt">
       <h3>Introduction to<br>
@@ -298,6 +318,8 @@
 
   </section>
 
+
+<!----- footer ----->
   <footer>
     <div class="footer-box">
       <p>ayjvv@naver.com</p>
