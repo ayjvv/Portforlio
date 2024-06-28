@@ -47,3 +47,7 @@ header.on{
 
 
 
+
+::-webkit-scrollbar {
+  display: none;
+}

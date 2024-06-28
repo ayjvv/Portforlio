@@ -136,7 +136,7 @@ gsap.utils.toArray('.rolled-over-txt').forEach((txt) => {
 
 
 
-
+//ult-wear 360도 회전 이미지 크기 조절
 function resizeCanvas() {
   const canvas = $('.cloudimage-360 canvas')[0];
   if (canvas) {
