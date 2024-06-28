@@ -1,3 +1,5 @@
+/*** a태그 속성지움 ***/
+$('a[href="#"]').on('click', e => e.preventDefault());
 
 
 // 텍스트 효과
@@ -138,10 +140,11 @@ gsap.utils.toArray('.rolled-over-txt').forEach((txt) => {
 
 //ult-wear 360도 회전 이미지 크기 조절
 function resizeCanvas() {
-  const canvas = $('.cloudimage-360 canvas')[0];
+  const canvas = $('.cloudimage-360 canvas')[0]; //'cloudimage-360' 안에 있는 첫 번째 <canvas> 엘리먼트를 선택
   if (canvas) {
       canvas.style.width = '100%';
   }
 }
 resizeCanvas();
 $(window).on('resize', resizeCanvas);
+//페이지 로드 시와 브라우저 창의 크기가 조정될 때마다 resizeCanvas 함수를 호출
