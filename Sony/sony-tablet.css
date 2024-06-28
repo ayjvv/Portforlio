@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1800px) {
+  body {
+    /* background-color: thistle; */
+  }
+
+  .ult-wear .ult-container {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* display: grid; */
+    grid-template-columns: 1fr; 
+  }
+
+  .ult-item {
+    position: static;
+  }
+
+  .ult-logo{
+    width: 30%;
+    min-width: 200px;
+  }
+  .core-container img {
+    left: 170px;
+  }
+  .ult-item{
+    margin-left: 0px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1350px) {
+  body{
+    /* background-color: burlywood; */
+  }
+  .core-container img {
+    left: 100px;
+  }
+
+  .customized-bg {
+    background: url(./images/video.png) no-repeat 50%;
+  }
+
+  .footer {
+    padding: 200px 70px 0 70px;
+  }
+
+  /***** footer *****/
+  .footer-box {
+    padding: 50px 0;
+    justify-content: center;
+  }
+
+  .footer-box p {
+    display: none;
+  }
+
+  .footer-box a {
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+
+}
+
+@media screen and (max-width: 1150px) {
+  body {
+    /* background-color: blanchedalmond; */
+  }
+
+  .main-txt ul {
+    padding-left: 20px;
+  }
+
+  .main-btn {
+    padding-left: 20px;
+  }
+
+  .customized-txt {
+    bottom: 30%;
+  }
+
+  .footer {
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-txt h3 {
+    padding-left: 20px;
+  }
+
+  .footer-list {
+    margin: 0;
+    width: 100%;
+  }
+
+  .footer-list ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-list li {
+    justify-content: space-around;
+  }
+
+  .footer-list li span {
+    padding: 8px;
+  }
+
+  .footer-list li img {
+    margin-top: 0;
+  }
+
+  .footer .people {
+    margin-left: 2px;
+  }
+
+  .footer-txt a {
+    margin-left: 20px
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    /* background-color: blue; */
+  }
+
+  .main-txt {
+    font-size: 1rem;
+  }
+
+  .core-container img {
+    /* display: none; */
+    left: 50px;
+  }
+
+  .main {
+    height: 80vh;
+  }
+
+  .music {
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 900px) {
+    body {
+      /* background-color: chartreuse; */
+    }
+
+    .music-txt {
+      flex-direction: column;
+    }
+
+    .music-txt li:last-child {
+      margin: 0;
+    }
+
+    .core-container img {
+      display: none;
+    }
+
+    .main-headphone {
+      display: none;
+    }
+
+    .customized-bg {
+      background: url(./images/video.png) no-repeat 30%;
+    }
+    .main-txt ul{
+      padding-right: 20px;
+    }
+    .main-txt ul li:last-child {
+      width: 100%;
+    }
+  }
+}

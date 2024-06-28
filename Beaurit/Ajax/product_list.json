@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "title": "코어클럽 42기",
+    "price" : "60,000원",
+    "url": "./images/list-img/제품리스트1.png",
+    "bestSeller": true 
+  },
+  {
+    "id": 2,
+    "title": "홈필라테스SET+뷰릿 다리 밴드",
+    "price" : "177,800원",
+    "url": "./images/list-img/제품리스트2.png",
+    "bestSeller": true 
+  },
+  {
+    "id": 3,
+    "title": "뷰릿 홈필라테스 SET",
+    "price" : "99,800원",
+    "url": "./images/list-img/제품리스트3.png",
+    "bestSeller": true 
+  },
+  {
+    "id": 4,
+    "title": "릴렉스 요가링",
+    "price" : "78,000원",
+    "url": "./images/list-img/제품리스트4.png",
+    "bestSeller": true 
+  },
+  {
+    "id": 5,
+    "title": "뷰릿토핑",
+    "price" : "59,000원",
+    "url": "./images/list-img/제품리스트5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "샤인유어바디(샤유바)",
+    "price" : "49,000원",
+    "url": "./images/list-img/제품리스트6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "뷰릿 다리밴드",
+    "price" : "59,000원",
+    "url": "./images/list-img/제품리스트7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "샤인유어바디 대용량",
+    "price" : "78,000원",
+    "url": "./images/list-img/제품리스트8.png"
+  },
+  {
+    "id": 9,
+    "title": "샤유바 보틀",
+    "price" : "16,000원",
+    "url": "./images/list-img/제품리스트9.png"
+  },
+  {
+    "id": 10,
+    "title": "뷰릿 베이직바",
+    "price" : "63,000원",
+    "url": "./images/list-img/제품리스트10.png"
+  },
+  {
+    "id": 11,
+    "title": "뷰릿 티칭밴드",
+    "price" : "42,800원",
+    "url": "./images/list-img/제품리스트11.jpg"
+  },
+  {
+    "id": 12,
+    "title": "뷰릿백",
+    "price" : "16,000원",
+    "url": "./images/list-img/제품리스트12.png"
+  },
+  {
+    "id": 13,
+    "title": "뷰릿 토핑 SET",
+    "price" : "122,000원",
+    "url": "./images/list-img/제품리스트13.jpg"
+  },
+  {
+    "id": 14,
+    "title": "뷰릿 다리밴드+티칭밴드",
+    "price" : "120,800원",
+    "url": "./images/list-img/제품리스트14.png"
+  },
+  {
+    "id": 15,
+    "title": "아이콘",
+    "icon1": "./images/list-img/list-icon-option.png",
+    "icon2": "./images/list-img/list-icon-wish.png",
+    "icon3": "./images/list-img/list-icon-cart.png"
+  }
+]
