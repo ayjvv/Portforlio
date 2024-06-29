@@ -210,7 +210,7 @@ body {
 .overview{
   margin-top: 140px;
   position: relative;
-  height: 80vh;
+  height: 90vh;
 }
 .overview .overview-img{
   text-align: center;
@@ -232,7 +232,10 @@ body {
   right: 5%;
   top: 4%;
 }
-
+.overview-container{
+  /* transform: translateY(10%); */
+  margin-bottom: 100px;
+}
 .overview .overview-txt{
   position: absolute;
   right: 50%;
@@ -254,13 +257,21 @@ body {
   font-weight: 500;
 }
 .overview .overview-txt p:nth-child(2){
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 35px;
   line-height: 1.4;
+  margin-bottom: 30px;
+}
+.overview .overview-txt p:nth-child(4), .overview .overview-txt p:nth-child(5){
+  margin-top: 25px;
+  margin-left: 35px;
+}
+.overview .overview-txt p:nth-child(5){
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 .overview-point{
-  margin-top: 205px;
+  margin-top: 320px;
   display: flex;
   position: absolute;
   /* bottom: 10%; */
@@ -268,14 +279,14 @@ body {
   transform: translateX(50%);
 }
 .overview-point li{
-  margin-top: 60px;
+  margin-top: 80px;
   margin-right: 40px;
-  background-color: var(--color-point-purple);
+  background-color: #8043E9;
   color: #fff;
   border: 2px solid #fff;
   text-align: center;
   border-radius: 50px;
-  padding: 13px 15px;
+  padding: 13px 25px;
   font-weight: 400;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -328,13 +339,14 @@ body {
   margin-left: 32%;
 }
 .prosess div{
-  transform: translateY(35%);
+  transform: translateY(23%);
   margin-left: 45px;
 }
 .prosess ul{
   display: grid;
   justify-content: center;
   font-size: 1.2rem;
+  margin-left: 100px;
 }
 .prosess ul li{
   margin: 8px;
