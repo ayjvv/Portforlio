@@ -182,7 +182,7 @@ body {
   font-size: clamp(0.6rem, 2vw, 1.2rem);
 }
 .cover-txt ul li:nth-child(1){
-  font-weight: 600;
+  font-weight: 700;
 }
 .blue-circle{
   width: 13px;
@@ -209,9 +209,8 @@ body {
   transform: translateY(0);
 }
 
-
 .overview{
-  margin-top: 150px;
+  margin-top: 140px;
   position: relative;
   height: 65vh;
 }
