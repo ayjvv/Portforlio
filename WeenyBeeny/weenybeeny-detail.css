@@ -146,6 +146,7 @@ body {
   /* position: absolute; */
   max-width: 40vw;
   width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .circle{
   display: grid;
@@ -156,6 +157,7 @@ body {
   border-radius: 50%;
   max-width: 50vw;
   max-height: 50vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .cover {
   background-color: var(--color-point-bg);
@@ -252,6 +254,9 @@ body {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
+}
+.overview .overview-txt span{
+  font-weight: 600;
 }
 .overview .overview-txt p{
   text-align: left; 
@@ -376,6 +381,9 @@ body {
 .publisihing ul li{
   margin: 8px;
 }
+.publisihing ul li span{
+  font-weight: 600;
+}
 
 
 /***** problems *****/
@@ -453,7 +461,7 @@ body {
   margin-bottom: 120px;
 }
 .review p:last-child{
-  margin-top: 2px;
+  margin-top: 20px;
 }
 
 

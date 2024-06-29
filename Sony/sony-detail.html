@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>weenybeeny-detail</title>
+  <title>SONY-detail</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <!-- favicon -->
   <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
@@ -23,7 +23,7 @@
 
 
   <!-- jQuery -->
-<script src="../assets/js/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/jquery-3.7.1.min.js"></script>
   <script src="../assets/js/jquery-ui.min.js"></script>
 </head>
 
@@ -57,33 +57,36 @@
   <!----- cover ----->
   <section class="cover">
     <div class="circle">
-      <img src="" alt="소니 페이지" class="sony">
+      <img src="./images/sony-cover.gif" alt="소니 페이지" class="sony">
     </div>
     <div class="cover-txt">
       <h2><img src="./images/blue-logo.png" alt="블루로고">Sony</h2>
       <ul>
-        <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle">리디자인 & 퍼블리싱</li>
+        <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle">리디자인 & 퍼블리싱 & 반응형</li>
         <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle">2024.06.20 ~ 2024.06.27</li>
       </ul>
     </div>
   </section>
 
-  <!----- overview -----> 
+  <!----- overview ----->
   <section class="overview scroll-reveal">
     <h3>Overview</h3>
     <div class="overview-img">
       <img src="./images/sony-detail-logo.png" alt="위니비니로고">
       <div class="overview-txt">
-        <p><img src="./images/ul-blue.png" alt="블루원" class="blue-circle">위니비니가 가지고 있는 귀엽고 컬러풀한 느낌을 살려 디자인하는 것이 목표였습니다.
+        <p><img src="./images/ul-blue.png" alt="블루원" class="blue-circle">SONY가 가지고 있는 <span>세련된 디자인과 스타일리시함</span>을
+          보여주고자 하였습니다.
         </p>
-        <p>또한 아기자기한 컨텐츠에 anmaiton과 JavaScript를 활용하여 정적인 페이지가 아닌<br>활동적이고 유쾌한 페이지를 만들고자 하였습니다.</p>
+        <p>또한 <span>미디어 쿼리</span>를 활용하여 다양한 디바이스에도 잘 작동할 수 있는<br>
+          <span>반응형 웹사이트</span>를 만드는 것을 목표로 삼았습니다.
+        </p>
       </div>
     </div>
 
     <ul class="overview-point">
-      <li>컬러풀한 디자인</li>
-      <li>활동적인 움직임</li>
-      <li>적절한 anmaition활용</li>
+      <li>세련된 디자인</li>
+      <li>반응형 웹사이트</li>
+      <li>MediaQuery 활용</li>
     </ul>
   </section>
 
@@ -116,8 +119,8 @@
         <li><img src="./images/NeueMontreal.png" alt="NeueMontreal"></li>
         <li>Bebas Neue (영문)</li>
       </ul>
-      <p>영문은 위니비니의 매력을 보여줄 수 있는 Genty Demo를 사용하고<br>
-        국문은 가독성이 좋은 Spoqa Han Sans Neo를 사용하였습니다.</p>
+      <p>강조를 위한 영문은 MADE Outer Sans을 사용하고,<br>
+        소니의 세련된 이미지에 맞게 Neue Montreal를 사용했습니다.</p>
     </div>
   </section>
 
@@ -126,10 +129,12 @@
   <section class="publisihing scroll-reveal">
     <h3>Publishing</h3>
     <ul>
-      <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle">JavaScript 효과를 활용한 다양한 이벤트 효과 구현</li>
-      <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle">grid를 사용하여 반응형에 알맞는 레이아웃 구현</li>
-      <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle">gsap의 toArray 사용한 텍스트 효과</li>
-      <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle">Swiper를 적용한 여러 슬라이드</li>
+      <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle"><span>JavaScript</span>를 활용한 다양한 이벤트 효과 구현</li>
+      <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle"><span>canvas</span>를 사용한 애니메이션 이미지</li>
+      <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle"><span>grid</span>를 사용하여 <span>반응형</span>에 알맞는
+        레이아웃 구현</li>
+      <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle"><span>gsap의 toArray</span> 사용한 텍스트 효과</li>
+      <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle"><span>Swiper</span>를 적용한 여러 슬라이드</li>
     </ul>
   </section>
 
@@ -143,14 +148,14 @@
       <ul>
         <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle">슬라이드, 반응형에 왜 반응을 안할까?</li>
         <li>pc 버전에서는 슬라이드의 레이아웃이 제대로 이루어져있었으나<br>
-            viewport의 크기가 줄어들면 레이아웃이 무너지는 현상이 발생하였습니다.</li>
+          viewport의 크기가 줄어들면 레이아웃이 무너지는 현상이 발생하였습니다.</li>
         <li>슬라이드를 만들었던 Swiper 코드에 <span>breakpoints를 활용</span>하였고,<br>
-            레이아웃이 무너지는 viewport의 크기를 확인 후 <span>slidesPerView 조절</span>하여<br>
-            반응형에도 제대로 보여질 수 있도록 하였습니다.</li>
+          레이아웃이 무너지는 viewport의 크기를 확인 후 <span>slidesPerView 조절</span>하여<br>
+          반응형에도 제대로 보여질 수 있도록 하였습니다.</li>
       </ul>
 
       <div class="img-center">
-        <img src="./images/" alt="정렬jpg" class="flex-img">
+        <img src="./images/slide-move.gif" alt="정렬jpg" class="flex-img">
       </div>
     </div>
 
@@ -175,22 +180,26 @@
   <section class="review scroll-reveal">
     <h3>Review</h3>
     <div>
-    <p></p>
-    <p></p></div>
+      <p>반응형 웹사이트를 목표로 시작한 만큼, 디자인부터 퍼블리싱 구조까지 신경 써야 하는 부분이 많았던 것 같습니다.</p>
+      <p>veiwport에 따라 계속해서 변하는 레이아웃으로 인한 여러 번의 코드 수정은 저를 힘들게 하기도 하였습니다.<br>그러나 다양한 디바이스에서 <strong>내가 만든 사이트를 볼 수 있다는 점</strong>은 오히려 저에게 해낼 수 있다는 힘을 가져다 주기도 했습니다.</p>
+      <p>반응형 웹사이트는 저에게 두려움이었지만,<br>
+        이번 개인 프로젝트를 완성했을 때의 큰 뿌듯함은 그 <strong>두려움의 크기를 작게 줄여준 계기</strong>가 되었습니다.<br>반응형 웹사이트를 만드는 <strong>과정 속에서 얻은 경험과 지식</strong>은 앞으로의 프로젝트에서도 큰 도움이 될 것입니다.</p>
+    </div>
   </section>
 
   <!----- footer ----->
   <footer>
     <div>
-      <a href="./weenybeeny.html" class="site-btn" target="_blank"><img src="./images/headphone-site.png" alt="해드폰">Sony 보러가기</a>
+      <a href="./sony.html" class="site-btn" target="_blank"><img src="./images/headphone-site.png" alt="해드폰">Sony
+        보러가기</a>
     </div>
 
-    <div class="go-to-up"> 
-    <a href="#"><svg width="35" height="35" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M4.293 15.707a1 1 0 0 0 1.414 0L12 9.414l6.293 6.293a1 1 0 0 0 1.414-1.414l-7-7a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 0 1.414Z"
-          fill="#fff" />
-      </svg></a>
+    <div class="go-to-up">
+      <a href="#"><svg width="35" height="35" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M4.293 15.707a1 1 0 0 0 1.414 0L12 9.414l6.293 6.293a1 1 0 0 0 1.414-1.414l-7-7a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 0 1.414Z"
+            fill="#fff" />
+        </svg></a>
     </div>
   </footer>
 

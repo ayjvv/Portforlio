@@ -144,7 +144,7 @@ header p{
   background: url(./images/cover-img.png) no-repeat 80%;
   background-size: cover;
   animation: grow 1.5s ease-out forwards;
-  transform: scale(0.3); /* 이미지 크기를 처음에 작게 설정 */
+  transform: scale(0.3);
 }
 
 @keyframes grow {

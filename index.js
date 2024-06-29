@@ -137,7 +137,7 @@ $(document).ready(function() {
             changeSwiperBackground(swiperClass, 'linear-gradient(#FFD8D8)');
             break;
           case 3:
-            changeSwiperBackground(swiperClass, 'linear-gradient(#FFFCA8)');
+            changeSwiperBackground(swiperClass, 'linear-gradient(#BDEFFF)');
             break;
           default:
             break;

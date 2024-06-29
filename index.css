@@ -9,6 +9,26 @@
   pointer-events: none;
 }
 
+.artboda-video{
+  border-radius: 48px;
+  /* border: 4.5px solid #000; */
+  /* position: absolute; */
+  max-width: 40vw;
+  width: 280px;
+  height: auto;
+}
+.beaurit-video{
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 750px;
+  border-radius: 25px;
+  border: 2px solid var(--color-point-orange);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+}
+
+
+
+
 /***** header *****/
 
 .menu-page {
@@ -189,10 +209,37 @@
 
 
 /***** project *****/
+.artboda-video{
+  border-radius: 48px;
+  /* border: 4.5px solid #000; */
+  /* position: absolute; */
+  max-width: 40vw;
+  width: 280px;
+  height: auto;
+}
+.beaurit-video{
+  margin-top: 30px;
+  margin-left: 55px;
+  width: 750px;
+  border-radius: 25px;
+  border: 2px solid var(--color-point-orange);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+}
+
 .project-img3{
   border-radius: 25px;
   border: 2px solid #FF6E7A;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+  margin-top: 48px;
+  margin-left: 50px;
+}
+.project-img4{
+  /* width: 20%; */
+  border-radius: 25px;
+  border: 2px solid #0032E1;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+  margin-top: 60px;
+  margin-left: 50px;
 }
 .project p {
   text-align: center;
@@ -231,12 +278,12 @@
 }
 
 .project-slide4 h3 {
-  color: var(--color-point-yellow);
+  color: var(--color-point-blue);
 }
 
 .project-slide .project-img {
-  width: 35%;
-  min-width: 400px;
+  width: 33%;
+  min-width: 650px;
 }
 
 .project1-logo {
@@ -274,7 +321,7 @@
 
 .project-num4 {
   font-size: 1.5rem;
-  color: var(--color-point-yellow);
+  color: var(--color-point-blue);
 }
 
 .project-txt h2 {
@@ -328,7 +375,7 @@ swiper-slide {
 }
 
 .project-btn4:hover {
-  background-color: var(--color-point-yellow);
+  background-color: var(--color-point-blue);
   color: #fff;
   border: 2px solid #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
