@@ -258,3 +258,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+
+//슬라이드 링크이동
+document.addEventListener('DOMContentLoaded', function() {
+  const artbodaVideo = document.querySelector('.artboda-video');
+  const artbodaLink = document.querySelector('.video-link');
+
+  if (artbodaVideo && artbodaLink) {
+    artbodaVideo.addEventListener('click', function() {
+      window.location.href = artbodaLink.href;
+    });
+  }
+
+  const beauritVideo = document.querySelector('.beaurit-video');
+  const beauritLink = document.querySelector('.new-video-link');
+
+  if (beauritVideo && beauritLink) {
+    beauritVideo.addEventListener('click', function() {
+      window.location.href = beauritLink.href;
+    });
+  }
+});

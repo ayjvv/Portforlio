@@ -419,7 +419,11 @@ header.on{
   min-width: 1000px;
   margin-top: 250px;
 }
- 
+ .set{
+  display: flex;
+  justify-content: center;
+}
+
 .set-product h3{
   font-family: var(--font-m-en);
   text-align: center;

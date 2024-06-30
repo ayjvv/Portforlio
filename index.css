@@ -10,6 +10,8 @@
 }
 
 .artboda-video{
+  transform: translateX(60%);
+ margin-top: 50px;
   border-radius: 48px;
   /* border: 4.5px solid #000; */
   /* position: absolute; */
@@ -24,6 +26,10 @@
   border-radius: 25px;
   border: 2px solid var(--color-point-orange);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+}
+
+.video-container, .new-video-container{
+  cursor: pointer;
 }
 
 html{
@@ -265,6 +271,7 @@ html{
   top: 10%;
   left: 13%;
 }
+
 
 /* project 컬러 */
 .project-slide1 h3 {
