@@ -82,8 +82,12 @@
     justify-content: left;
     gap: 10px;
   }
-
-  .play-btn span {}
+  .main-txt a:last-child span{
+    margin-left: 48px;
+  }
+  .main-txt a:last-child span img{
+    margin-top: 1px;
+  }
 
   /***** music *****/
   .music {
