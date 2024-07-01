@@ -36,8 +36,8 @@ Swiper를 적용한 슬라이드
 
 
 # More View
-<a href="https://www.figma.com/design/dtyYX2ugryTjAuVXJyUE3I/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%9E%91%EC%97%85?node-id=0-1&t=OggMNGYzTyFUgivL-0" target="_blank">피그마 보러가기</a>  
-[포트폴리오 보러가기](https://ayjvv.github.io/Portforlio/index.html){:target="_blank"}
+[피그마 보러가기](https://www.figma.com/design/dtyYX2ugryTjAuVXJyUE3I/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%9E%91%EC%97%85?node-id=0-1&t=OggMNGYzTyFUgivL-0)  
+[포트폴리오 보러가기](https://ayjvv.github.io/Portforlio/index.html)
 
 
 # Review
