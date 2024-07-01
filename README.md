@@ -1,7 +1,8 @@
 ## <h1>🌞Portfolio-작업일지</h1>
-![포폴메인이미지](assets/images/open.png)
 - - - -   
 <br>
+
+![포폴메인이미지](assets/images/open.png)
 
 # 목표
 ![원](assets/images/circle.png)
