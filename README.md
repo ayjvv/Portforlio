@@ -35,8 +35,6 @@ gsap를 활용한 디자인
 Swiper를 적용한 슬라이드  
 
 
-#Problems & Solution
-![원](assets/images/circle.png)
+# Review
 
 
-사용기술, 작업물(피그마, 포폴사이트)
