@@ -82,26 +82,6 @@ $(document).ready(function() {
 
 
 
-//  /*** 스크롤에 따라 스와이퍼 배경색 바꾸기 ***/
-// $(document).ready(function() {
-//   $(window).on('scroll', function() {
-//     var scrollPosition = $(window).scrollTop();
-//     var windowHeight = $(window).height();
-//     var swiperTop = $('.project-txt').offset().top;
-//     var swiperBottom = swiperTop + $('.project-txt').outerHeight();
-
-//     if (scrollPosition + windowHeight > swiperTop && scrollPosition < swiperBottom) {
-//       $('.project-slide1').stop().animate({
-//         'background-color': 'linear-gradient(#E3D3FF)'
-//       }, 900); //안에 들어왔을 때
-//     } else {
-      
-//       $('.project-slide1').stop().animate({
-//         'background-color': '#F0EBE8'
-//       }, 300); // 벗어났을 때
-//     }
-//   });
-// });
 
 /*** 스크롤에 따라 스와이퍼 배경색 바꾸기2 ***/
 $(document).ready(function() {
