@@ -36,7 +36,7 @@ Swiper를 적용한 슬라이드
 
 
 # More View
-[피그마 보러가기]
+[피그마 보러가기]  
 [포트폴리오 보러가기](https://ayjvv.github.io/Portforlio/index.html)
 
 
