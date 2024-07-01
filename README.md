@@ -24,10 +24,13 @@
 # Publishing
 ![원](assets/images/circle.png)
 JavaScript를 활용한 다양한 스크롤 이벤트  
+
 ![원](assets/images/circle.png)
 transition을 사용한 자연스러운 움직임  
+
 ![원](assets/images/circle.png)
 gsap를 활용한 디자인  
+
 ![원](assets/images/circle.png)
 Swiper를 적용한 슬라이드  
 
