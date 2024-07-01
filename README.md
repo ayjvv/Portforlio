@@ -18,6 +18,9 @@
 ![원](assets/images/circle.png)
 태양을 연상시킬 수 있는 컬러를 linear-gradient로 표현하였습니다.
 
+# Font
+![서브컬러](assets/images/font.png)  
+
 
 
 
