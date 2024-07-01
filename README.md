@@ -19,8 +19,19 @@
 태양을 연상시킬 수 있는 컬러를 linear-gradient로 표현하였습니다.
 
 # Font
-![서브컬러](assets/images/font.png)  
+![폰트](assets/images/font.png)  
+![원](assets/images/circle.png)
 
+
+# Publishing
+![원](assets/images/circle.png)
+JavaScript를 활용한 다양한 스크롤 이벤트  
+![원](assets/images/circle.png)
+transition을 사용한 자연스러운 움직임  
+![원](assets/images/circle.png)
+gsap를 활용한 디자인
+![원](assets/images/circle.png)
+Swiper를 적용한 슬라이드
 
 
 
