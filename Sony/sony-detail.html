@@ -90,7 +90,7 @@
     </ul>
   </section>
 
-  <!----- design ----->
+  <!----- design -----> 
   <section class="design scroll-reveal">
     <h3>Design</h3>
     <div class="main-color">
@@ -117,7 +117,7 @@
         <li><img src="./images/MadeOuterSans.png" alt="MADEOuterSans"></li>
         <li>MADE Outer Sans (영문)</li>
         <li><img src="./images/NeueMontreal.png" alt="NeueMontreal"></li>
-        <li>Bebas Neue (영문)</li>
+        <li>Neue Montreal (영문 & 국문)</li>
       </ul>
       <p>강조를 위한 영문은 MADE Outer Sans을 사용하고,<br>
         소니의 세련된 이미지에 맞게 Neue Montreal를 사용했습니다.</p>
@@ -133,7 +133,7 @@
       <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle"><span>canvas</span>를 사용한 애니메이션 이미지</li>
       <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle"><span>grid</span>를 사용하여 <span>반응형</span>에 알맞는
         레이아웃 구현</li>
-      <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle"><span>gsap의 toArray</span> 사용한 텍스트 효과</li>
+      <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle"><span>gsap의 toArray</span>를 사용한 텍스트 효과</li>
       <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle"><span>Swiper</span>를 적용한 여러 슬라이드</li>
     </ul>
   </section>
@@ -162,11 +162,12 @@
     <div class="problems-txt2 scroll-reveal">
       <ul>
         <li><img src="./images/ul-blue.png" alt="블루원" class="blue-circle">canvas의 width 값, 왜 새로고침을 해야 돌아올까?</li>
-        <li>line-bg 영역 내에 스크롤이 왔을 시 라인 3개가 움직이는 이벤트를 적용하였으나<br>
-          스크롤이 영역 밖으로 갔다가 다시 돌아오면 이벤트가 다시 발생하지 않았습니다.
+        <li>canvas의 width 값이 viewport에 맞춰 조절되었다가 pc버전으로 돌아오면<br>
+          기존의 width값으로 돌아오지 않고 새로고침을 해야만 돌아오는 현상이 발생하였습니다.
         </li>
-        <li>JavaScript에 <span>조건문</span>을 추가하여<br>
-          if - <span>영역 내에 있을 때</span>는 class가 적용되고 else - <span>영역 밖에 있을 때</span> class가<br>적용되지 않게 코드를 변경하였더니 해결되었습니다.
+        <li><span>resizeCanvas() 함수</span>를 사용하여 width 값을 100%로 지정하고<br>
+          <span>페이지 로드 시와 브라우저 창의 크기가 조정</span>될 때마다 resizeCanvas 함수가 호출되도록<br>
+          코드를 작성하여 해결하였습니다.
         </li>
       </ul>
 
