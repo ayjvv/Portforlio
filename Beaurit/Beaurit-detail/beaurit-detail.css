@@ -210,7 +210,7 @@ body {
 .overview{
   margin-top: 140px;
   position: relative;
-  height: 80vh;
+  height: 730px;
 }
 .overview .overview-img{
   text-align: center;
@@ -283,7 +283,7 @@ body {
 /***** part *****/
 .part{
   position: relative;
-  height: 45vh;
+  height: 410px;
 }
 .part h3::after{
   content: "";
@@ -311,7 +311,7 @@ body {
 /***** prosess *****/
 .prosess{
   position: relative;
-  height: 70vh;
+  height: 630px;
 }
 .prosess h3::after{
   content: "";

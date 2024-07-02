@@ -211,7 +211,7 @@ body {
 .overview{
   margin-top: 140px;
   position: relative;
-  height: 65vh;
+  height: 620px;
 }
 .overview .overview-img{
   text-align: center;
@@ -360,7 +360,7 @@ body {
 /***** publisihing *****/
 .publisihing{
   position: relative;
-  height: 45vh;
+  height: 420px;
 }
 .publisihing h3::after{
   content: "";
